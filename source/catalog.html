@@ -10,26 +10,24 @@
         <a class="page-header__logo" href="index.html">
           <img class="page-header__logo-image" src="https://via.placeholder.com/191x39" alt="Кэт энерджи" width="191" height="39">
         </a>
-      </div>
-      <nav class="main-nav">
-        <button class="main-nav__toggle" type="button">Открыть меню</button>
-        <div class="main-nav__wrapper">
+        <nav class="main-nav">
+          <button class="main-nav__toggle" type="button">Открыть меню</button>
           <ul class="main-nav__list">
             <li class="main-nav__item">
               <a href="index.html" class="main-nav__link">Главная</a>
             </li>
             <li class="main-nav__item">
-              <a href="#" class="main-nav__link">Каталог продукции</a>
+              <a class="main-nav__link">Каталог продукции</a>
             </li>
             <li class="main-nav__item">
               <a href="form.html" class="main-nav__link">Подбор программы</a>
             </li>
           </ul>
-        </div>
-      </nav>
+        </nav>
+      </div>
     </header>
-    <main class="page-main">
-      <h1 class="page-main__title">Каталог продукции</h1>
+    <main class="inner-page catalog-page">
+      <h1 class="inner-page__title">Каталог продукции</h1>
       <section class="products">
         <h2 class="visually-hidden">Список основных товаров</h2>
         <ul class="products__list">
@@ -40,7 +38,7 @@
                 PRO 500 г">
               </picture>
             </a>
-            <div>
+            <div class="products__info">
               <a href="#" class="products__title"><h3>Cat Energy PRO 500 г</h3></a>
               <table class="products__table">
                 <tr>
@@ -78,7 +76,7 @@
                 PRO 1000 г">
               </picture>
             </a>
-            <div>
+            <div class="products__info">
               <a href="#" class="products__title"><h3>Cat Energy PRO 1000 г</h3></a>
               <table class="products__table">
                 <tr>
@@ -116,7 +114,7 @@
                 PRO 500 г">
               </picture>
             </a>
-            <div>
+            <div class="products__info">
               <a href="#" class="products__title"><h3>Cat Energy PRO 500 г</h3></a>
               <table class="products__table">
                 <tr>
@@ -154,7 +152,7 @@
                 PRO 1000 г">
               </picture>
             </a>
-            <div>
+            <div class="products__info">
               <a href="#" class="products__title"><h3>Cat Energy PRO 1000 г</h3></a>
               <table class="products__table">
                 <tr>
@@ -191,7 +189,7 @@
                 <img class="products__image" src="https://via.placeholder.com/140x144" alt="Cat Energy Slim 500 г">
               </picture>
             </a>
-            <div>
+            <div class="products__info">
               <a href="#" class="products__title"><h3>Cat Energy Slim 500 г</h3></a>
               <table class="products__table">
                 <tr>
@@ -229,7 +227,7 @@
                 Slim 1000 г">
               </picture>
             </a>
-            <div>
+            <div class="products__info">
               <a href="#" class="products__title"><h3>Cat Energy Slim 1000 г</h3></a>
               <table class="products__table">
                 <tr>
@@ -267,7 +265,7 @@
                 Slim 500 г">
               </picture>
             </a>
-            <div>
+            <div class="products__info">
               <a href="#" class="products__title"><h3>Cat Energy Slim 500 г</h3></a>
               <table class="products__table">
                 <tr>
@@ -302,7 +300,71 @@
         <div class="products__show-all show-all">
           <h3 class="show-all__title">Показать еще 100500 товаров</h3>
           <p class="show-all__text">На самом деле вкусов гораздо больше!</p>
-          <button class="show-all__button" type="button">Показать все</button>
+          <a class="show-all__button">Показать все</a>
+        </div>
+      </section>
+      <section class="additional-goods">
+        <h2 class="additional-goods__title">Дополнительные товары</h2>
+        <ul class="additional-goods__list">
+          <li class="additional-goods__item">
+            <h3 class="additional-goods__title">Сахарозаменитель</h3>
+            <table class="additional-goods__table">
+              <tr>
+                <td>1 упаковка (100 г)</td>
+                <td>200 Р.</td>
+              </tr>
+            </table>
+            <a class="additional-goods__link" href="#">Заказать</a>
+          </li>
+          <li class="additional-goods__item">
+            <h3 class="additional-goods__title">Питьевая вода</h3>
+            <table class="additional-goods__table">
+              <tr>
+                <td>5 литров</td>
+                <td>50 Р.</td>
+              </tr>
+            </table>
+            <a class="additional-goods__link" href="#">Заказать</a>
+          </li>
+          <li class="additional-goods__item">
+            <h3 class="additional-goods__title">Молоко</h3>
+            <table class="additional-goods__table">
+              <tr>
+                <td>1 литр</td>
+                <td>100 Р.</td>
+              </tr>
+            </table>
+            <a class="additional-goods__link" href="#">Заказать</a>
+          </li>
+          <li class="additional-goods__item">
+            <h3 class="additional-goods__title">Витамины</h3>
+            <table class="additional-goods__table">
+              <tr>
+                <td>1 упаковка (30 г)</td>
+                <td>300 Р.</td>
+              </tr>
+            </table>
+            <a class="additional-goods__link" href="#">Заказать</a>
+          </li>
+        </ul>
+        <a href="#" class="additional-goods__buy-all buy-all">
+          <p class="buy-all__text">
+            Закажите все и получите чехол для кота в подарок!
+          </p>
+        </a>
+      </section>
+      <section class="contacts">
+        <h2 class="visually-hidden">Контакты</h2>
+        <div class="contacts__wraper">
+          <p class="contacts__slogan">
+            Приглашаем к сотрудничеству дилеров!
+          </p>
+          <address>
+            ул. Большая Конюшенная, д. 19/8 Санкт-Петербург
+          </address>
+        </div>
+        <div class="contacts__map">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d420.1565038540739!2d30.32273309762972!3d59.93857332416266!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1573320531410!5m2!1sru!2sru" width="320" height="400" style="border:0;" allowfullscreen=""></iframe>
         </div>
       </section>
     </main>
