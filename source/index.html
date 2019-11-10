@@ -5,8 +5,172 @@
     <title>HTML Academy: Кэт энерджи</title>
   </head>
   <body>
+    <header class="page-header">
+      <div class="page-header__wrapper">
+        <a class="page-header__logo">
+          <img class="page-header__logo-image" src="https://via.placeholder.com/191x39" alt="Кэт энерджи" width="191" height="39">
+        </a>
+        <nav class="main-nav">
+          <button class="main-nav__toggle" type="button">Открыть меню</button>
+          <ul class="main-nav__list">
+            <li class="main-nav__item">
+              <a class="main-nav__link">Главная</a>
+            </li>
+            <li class="main-nav__item">
+              <a href="catalog.html" class="main-nav__link">Каталог продукции</a>
+            </li>
+            <li class="main-nav__item">
+              <a href="form.html" class="main-nav__link">Подбор программы</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main class="page-main">
+      <h1 class="visually-hidden">Интернет-магазин Кэт энерджи: здоровое питание для котов</h1>
+      <section class="promo">
+        <div class="promo__wrapper">
+          <h2 class="promo__title">Функциональное питание для котов</h2>
+          <strong class="promo__slogan">Занялся собой? Займись котом!</strong>
+        </div>
+        <div class="promo__image-wrapper">
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">HTML и CSS, уровень 2</a>».</p>
+        </div>
+        <a class="promo__button button" href="form.html">Подобрать программу</a>
+      </section>
+      <section class="series">
+        <ul class="series__list">
+          <li class="series__item series__item--slim">
+            <h3 class="series__title">Похудение</h3>
+            <p class="series__description">
+              Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.
+            </p>
+            <a class="series__link" href="#">Каталог Slim</a>
+          </li>
+          <li class="series__item series__item--gain">
+            <h3 class="series__title">Набор массы</h3>
+            <p class="series__description">
+              Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!
+            </p>
+            <a class="series__link" href="#">Каталог Pro</a>
+          </li>
+        </ul>
+      </section>
+      <section class="advantages">
+        <h2 class="advantages__title">Как это работает</h2>
+        <ul class="advantages__list">
+          <li class="advantages__item">
+            <p class="advantages__text">
+              Функциональное питание содержит только полезные питательные вещества.
+            </p>
+          </li>
+          <li class="advantages__item">
+            <p class="advantages__text">
+              Выпускается в виде порошка, который нужно лишь залить кипятком и готово.
+            </p>
+          </li>
+          <li class="advantages__item">
+            <p class="advantages__text">
+              Замените один-два приема обычной еды на наше функциональное питание.
+            </p>
+          </li>
+          <li class="advantages__item">
+            <p class="advantages__text">
+              Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!
+            </p>
+          </li>
+        </ul>
+      </section>
+      <section class="example">
+        <div class="example__wrapper">
+          <h2 class="example__title">Живой пример</h2>
+          <p class="example__text">
+            Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.
+          </p>
+          <div class="example__stats">
+            <dl>
+              <dt>5кг</dt>
+              <dd>снижение веса</dd>
+            </dl>
+            <dl>
+              <dt>60 дней</dt>
+              <dd>затрачено времени</dd>
+            </dl>
+          </div>
+          <p class="example__price">
+            Затраты на питание: 15 000 руб.
+          </p>
+        </div>
+        <div class="example__slider slider">
+          <div class="slider__item">
+            <picture>
+              <img class="slider__image" src="https://via.placeholder.com/311x232" alt="Котик до диеты">
+            </picture>
+          </div>
+          <div class="slider__item">
+            <picture>
+              <img class="slider__image" src="https://via.placeholder.com/311x232" alt="Котик после диеты">
+            </picture>
+          </div>
+          <div class="slider__controls">
+            <button class="slider__button slider__button--before" type="button">Было</button>
 
+            <div class="slider__range range">
+              <button class="range__button" type="button"></button>
+            </div>
+
+            <button class="slider__button slider__button--before" type="button">Стало</button>
+          </div>
+        </div>
+      </section>
+      <section class="contacts">
+        <h2 class="visually-hidden">Контакты</h2>
+        <div class="contacts__wraper">
+          <p class="contacts__slogan">
+            Приглашаем к сотрудничеству дилеров!
+          </p>
+          <address>
+            ул. Большая Конюшенная, д. 19/8 Санкт-Петербург
+          </address>
+        </div>
+        <div class="contacts__map">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d420.1565038540739!2d30.32273309762972!3d59.93857332416266!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1573320531410!5m2!1sru!2sru" width="320" height="400" style="border:0;" allowfullscreen=""></iframe>
+        </div>
+      </section>
+    </main>
+    <footer class="page-footer">
+      <div class="page-footer__wrapper">
+        <a href="#" class="page-footer__logo">
+          <img  class="page-footer__logo-image" src="https://via.placeholder.com/128x24" alt="Кэт энерджи">
+        </a>
+        <div class="page-footer__socials">
+          <ul class="socials__list">
+            <li class="socials__item">
+              <a href="#" class="socials__link">
+                Мы вконтакте
+              </a>
+            </li>
+            <li class="socials__item">
+              <a href="#" class="socials__link">
+                Мы в телеграмм
+              </a>
+            </li>
+            <li class="socials__item">
+              <a href="#" class="socials__link">
+                Мы в фейсбуке
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="copyrights">
+          <a class="copyrights__link" href="https://htmlacademy.ru/intensive/adaptive">
+            HTML Academy
+          </a>
+          <a class="copyrights__logo" href="https://htmlacademy.ru/intensive/adaptive">
+            <img class="copyrights__logo-image" src="https://via.placeholder.com/50x50" alt="HTML Academy">
+          </a>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
