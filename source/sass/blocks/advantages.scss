@@ -1,0 +1,27 @@
+.advantages__title {
+  margin: 0;
+  margin-bottom: 24px;
+  padding: 0;
+  font-size: 36px;
+  line-height: 60px;
+}
+
+.advantages__list {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.advantages__item {
+  margin-bottom: 25px;
+  padding-left: 80px;
+  padding-right: 20px;
+}
+
+.advantages__text {
+  margin: 0;
+  color: #444444;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}

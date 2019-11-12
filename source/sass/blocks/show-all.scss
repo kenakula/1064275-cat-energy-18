@@ -1,0 +1,23 @@
+.show-all {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.show-all__title {
+  color: #111111;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+
+.show-all__text {
+  color: #444444;
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.show-all__button {
+  align-self: stretch;
+  background-color: #f2f2f2;
+  color: #444444;
+}
