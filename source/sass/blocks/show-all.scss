@@ -2,6 +2,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  border-top: 1px solid #ededed;
 }
 
 .show-all__title {
@@ -18,6 +19,9 @@
 
 .show-all__button {
   align-self: stretch;
-  background-color: #f2f2f2;
+  font-size: 16px;
+  line-height: 20px;
   color: #444444;
+  background-color: #f2f2f2;
+
 }

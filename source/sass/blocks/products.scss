@@ -10,27 +10,31 @@
   list-style: none;
 }
 
-.products__wrapper {
-  display: flex;
-  justify-content: space-between;
-}
-
 .products__item {
   display: flex;
   flex-direction: column;
   border-top: 1px solid #ededed;
 }
 
+.products__wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
 .products__info {
+  display: flex;
+  flex-direction: column;
   flex-grow: 1;
 }
 
 .products__title {
+  display: flex;
+  margin-top: 25px;
+  width: 85px;
+  font-size: 16px;
+  line-height: 20px;
   color: #111111;
   text-decoration: none;
-  display: flex;
-  flex-wrap: wrap;
-  margin-top: 20px;
 }
 
 .products__title h3 {

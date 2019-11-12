@@ -1,37 +1,40 @@
+.series {
+  padding: 0 20px;
+}
+
 .series__list {
+  display: flex;
   margin: 0;
   padding: 0;
-  display: flex;
   flex-direction: column;
   list-style: none;
 }
 
 .series__item {
-  margin-left: 20px;
-  margin-right: 20px;
-  margin-top: 20px;
-  padding-left: 20px;
-  padding-right: 25px;
   display: flex;
   flex-direction: column;
+  margin-top: 22px;
+  padding-left: 20px;
+  padding-right: 25px;
   background-color: #f2f2f2;
 }
 
 .series__title {
-  margin-top: 28px;
+  margin-top: 25px;
   margin-left: 60px;
-  font-size: 22px;
-  line-height: 37.02px;
+  font-size: 24px;
+  line-height: 37px;
+  font-weight: normal;
   text-transform: uppercase;
 }
 
 .series__description {
   margin: 0;
   padding: 0;
-  padding-bottom: 25px;
+  padding-bottom: 23px;
+  border-bottom: 1px solid #e6e6e6;
   color: #444444;
   font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
-  border-bottom: 1px solid #e6e6e6;
 }
 
 .series__link {
