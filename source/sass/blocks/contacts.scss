@@ -1,0 +1,21 @@
+.contacts__wraper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 19px;
+  min-height: 114px;
+}
+
+.contacts__slogan {
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: $black;
+}
+
+.contacts__address {
+  font-family: $font-alt;
+  font-style: normal;
+  line-height: 20px;
+  color: $dark-grey;
+}

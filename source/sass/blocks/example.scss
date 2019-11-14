@@ -1,0 +1,54 @@
+.example {
+  padding-top: 20px;
+  padding-bottom: 38px;
+  background-color: $bg-grey;
+}
+
+.example__info {
+  padding: 0 20px;
+}
+
+.example__title {
+  margin: 0;
+  font-size: 36px;
+  line-height: 60px;
+  color: $black;
+}
+
+.example__text {
+  font-family: $font-alt;
+  color: $dark-grey;
+}
+
+.example__stats {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 27px;
+
+  dl {
+    width: 124px;
+  }
+
+  dt {
+    font-size: 24px;
+    line-height: 24px;
+    color: $black;
+    text-align: center;
+  }
+
+  dl {
+    font-size: 12px;
+    line-height: 12px;
+    color: $dark-grey;
+  }
+}
+
+.example__price {
+  margin-top: 38px;
+  line-height: 20px;
+  text-align: center;
+}
+
+.example__slider {
+  margin-top: 44px;
+}
