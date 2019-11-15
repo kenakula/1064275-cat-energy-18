@@ -14,6 +14,7 @@
 .additional-goods__list {
   display: flex;
   flex-direction: column;
+
   @include list-reset;
 }
 
@@ -62,7 +63,7 @@
   margin-top: 39px;
   min-height: 289px;
   background-color: $green;
-  background-image: url(../img/gift-photo-mobile@1x.jpg);
+  background-image: url("../img/gift-photo-mobile@1x.jpg");
   background-position: center center;
   text-decoration: none;
 }
