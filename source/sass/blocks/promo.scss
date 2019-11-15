@@ -48,3 +48,45 @@
   background-color: $green;
   color: #ffffff;
 }
+
+@media (min-width: $tablet) {
+  .promo__wrapper {
+    margin-left: 120px;
+    max-width: 445px;
+    min-height: 150px;
+    background-image: none;
+    background-color: #ffffff;
+  }
+
+  .promo__title {
+    color: $black;
+    font-size: 60px;
+    line-height: 60px;
+    text-align: left;
+  }
+
+  .promo__slogan {
+    margin-top: 30px;
+    color: $black;
+    font-size: 20px;
+    line-height: 20px;
+    text-align: left;
+  }
+
+  .promo__button {
+    position: absolute;
+    top: 230px;
+    left: 100px;
+    margin-top: 0;
+    padding-left: 23px;
+    padding-right: 23px;
+    font-size: 20px;
+    line-height: 20px;
+
+  }
+
+  .promo__image-wrapper {
+    position: initial;
+    margin-top: 10px;
+  }
+}
