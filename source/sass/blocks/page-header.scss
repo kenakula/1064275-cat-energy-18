@@ -1,0 +1,23 @@
+.page-header {
+  min-height: 65px;
+}
+
+.page-header__wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: $tablet) {
+
+  .page-header__wrapper {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+    padding: 0 20px;
+  }
+
+  .main-nav__toggle {
+    display: none;
+  }
+}

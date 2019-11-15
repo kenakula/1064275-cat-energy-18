@@ -1,3 +1,7 @@
+.promo {
+  position: relative;
+}
+
 .promo__wrapper {
   padding-top: 25px;
   min-height: 305px;
@@ -28,7 +32,10 @@
 }
 
 .promo__image-wrapper {
+  position: absolute;
   min-height: 280px;
+  min-width: 320px;
+  top: 165px;
   background-color: transparent;
   background-image: url("../img/index-can-mobile@1x.png");
   background-position: center center;
@@ -37,6 +44,7 @@
 
 .promo__button {
   margin: 0 20px;
+  margin-top: 135px;
   background-color: $green;
   color: #ffffff;
 }
