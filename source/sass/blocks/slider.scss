@@ -1,3 +1,39 @@
+.slider__item {
+  position: absolute;
+  width: 100%;
+  min-height: 232px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .slider__controls {
-  margin-top: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 250px;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+// другой блок?
+
+.slider__range {
+  margin: 0;
+  width: 84px;
+  height: 14px;
+
+  background-color: $green;
 }

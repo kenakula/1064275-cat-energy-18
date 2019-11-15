@@ -1,6 +1,5 @@
 .example {
-  padding-top: 20px;
-  padding-bottom: 38px;
+  padding: 20px 0;
   background-color: $bg-grey;
 }
 
@@ -25,6 +24,20 @@
   justify-content: space-between;
   margin-top: 27px;
 
+  dl {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 124px;
+    height: 56px;
+    font-size: 12px;
+    line-height: 12px;
+    color: $dark-grey;
+    border: 1px solid $border-color-alt;
+  }
+
   dt {
     font-size: 24px;
     line-height: 24px;
@@ -32,20 +45,28 @@
     text-align: center;
   }
 
-  dl {
-    width: 124px;
-    font-size: 12px;
-    line-height: 12px;
-    color: $dark-grey;
+  dd {
+    position: absolute;
+    bottom: -15px;
+    display: block;
+    width: 87px;
+    margin: 0;
+    padding: 0 15px;
+    background-color: $bg-grey;
+    font-family: $font-alt;
+    text-align: center;
   }
 }
 
 .example__price {
-  margin-top: 38px;
+  margin-top: 30px;
   line-height: 20px;
   text-align: center;
 }
 
 .example__slider {
+  position: relative;
+  display: flex;
+  flex-direction: column;
   margin-top: 44px;
 }
