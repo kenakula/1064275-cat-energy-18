@@ -1,12 +1,15 @@
 .form__field {
   display: flex;
-  align-items: center;
+  flex-direction: column;
   margin: 0;
   margin-bottom: 20px;
   padding: 0;
   padding-bottom: 20px;
   border: none;
   border-bottom: 1px solid $border-color;
+  font-size: 16px;
+  text-transform: uppercase;
+  color: $black-alt
 }
 
 .form__wrapper {
@@ -14,8 +17,50 @@
   padding: 10px 0;
 }
 
-.form__label {
+.form__input {
+  margin: 0;
+  padding: 0;
+
+  &--radio,
+  &--checkbox {
+    margin-right: 15px;
+  }
+}
+
+.user-data__label,
+.user-contacts__label {
+  display: flex;
+  align-items: center;
+  margin-right: 10px;
+}
+
+.user-data__input,
+.user-contacts__input {
+  @include text-input;
+}
+
+.user-data__input::placeholder,
+.user-contacts__input::placeholder,
+.user-comment__textarea {
+  font-family: $font-regular;
   font-size: 16px;
+  color: $dark-grey;
+  text-transform: uppercase;
+}
+
+.user-comment__textarea {
+  margin: 0;
+  padding-left: 16px;
+  padding-top: 12px;
+  min-height: 150px;
+  border: 1px solid $input-border;
+  resize: none;
+}
+
+.form__legend {
+  margin-bottom: 25px;
+  font-size: 24px;
+  line-height: 24px;
 }
 
 .form__button {
