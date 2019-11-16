@@ -13,7 +13,7 @@
   //временно
   width: 25px;
   height: 25px;
-  font-size: 0px;
+  font-size: 0;
 }
 
 .main-nav__list {
@@ -38,7 +38,6 @@
 }
 
 @media (min-width: $tablet) {
-
   .main-nav {
     min-width: 440px;
     font-family: $font-regular;
@@ -52,21 +51,18 @@
     justify-content: space-between;
   }
 
-  .main-nav__item{
+  .main-nav__item {
     border: none;
   }
-
 }
 
 @media (min-width: $desktop) {
-
   .main-nav {
     min-width: 480px;
     font-size: 20px;
   }
 
   .main-nav__link {
-
     &--index-page {
       color: #ffffff;
     }

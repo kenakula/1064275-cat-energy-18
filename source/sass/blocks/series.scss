@@ -5,6 +5,7 @@
 .series__list {
   display: flex;
   flex-direction: column;
+
   @include list-reset;
 }
 
@@ -46,13 +47,11 @@
 
 
 @media (min-width: $tablet) {
-
   .series {
     padding: 0 30px;
   }
 
   .series__item {
-
     &:first-child {
       margin-top: 0;
     }
@@ -75,7 +74,7 @@
     line-height: 24px;
   }
 
-  .series__link  {
+  .series__link {
     margin-bottom: 45px;
     font-size: 20px;
     line-height: 20px;

@@ -16,6 +16,7 @@
 .advantages__list {
   display: flex;
   flex-direction: column;
+
   @include list-reset;
 }
 
@@ -48,6 +49,9 @@
 }
 
 @media (min-width: $tablet) {
+  .advantages {
+    padding-left: 30px;
+  }
 
   .advantages__list {
     flex-direction: row;
@@ -82,7 +86,6 @@
 }
 
 @media (min-width: $desktop) {
-
   .advantages {
     padding-left: 110px;
   }
