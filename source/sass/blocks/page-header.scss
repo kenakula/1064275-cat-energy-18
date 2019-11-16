@@ -9,6 +9,10 @@
   flex-direction: column;
 }
 
+.page-header__logo {
+  margin-left: 20px;
+}
+
 @media (min-width: $tablet) {
   .page-header__wrapper {
     flex-direction: row;

@@ -1,10 +1,11 @@
 @import "variables.scss";
 @import "mixins.scss";
 @import "global.scss";
+@import "font-stylesheet.scss";
 
 // index
 
-@import "font-stylesheet.scss";
+@import "blocks/wrapper.scss";
 @import "blocks/page-header.scss";
 @import "blocks/button.scss";
 @import "blocks/main-nav.scss";
