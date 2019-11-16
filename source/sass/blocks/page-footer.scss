@@ -22,3 +22,26 @@
 .page-footer__copyrights {
   margin: 20px 0;
 }
+
+@media (min-width: $tablet) {
+  .page-footer {
+    padding: 0 30px;
+  }
+
+  .page-footer__wrapper {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 150px;
+  }
+
+  .page-footer__socials {
+    border: none;
+  }
+}
+
+@media (min-width: $desktop) {
+  .page-footer {
+    padding: 0 110px;
+  }
+}

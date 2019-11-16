@@ -77,9 +77,11 @@
 
   .promo__button {
     position: absolute;
-    top: 230px;
+    top: 250px;
     left: 120px;
     margin: 0;
+    padding-top: 17px;
+    padding-bottom: 15px;
     padding-left: 23px;
     padding-right: 23px;
     font-size: 20px;
@@ -89,6 +91,8 @@
   .promo__image-wrapper {
     position: initial;
     margin-top: 25px;
+    min-height: 625px;
+    background-image: url("../../img/index-can-tablet@1x.jpg");
   }
 }
 
@@ -131,7 +135,5 @@
   .promo__button {
     top: 470px;
     left: 191px;
-    padding-top: 17px;
-    padding-bottom: 15px;
   }
 }

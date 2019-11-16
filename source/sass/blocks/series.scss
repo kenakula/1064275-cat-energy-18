@@ -4,10 +4,8 @@
 
 .series__list {
   display: flex;
-  margin: 0;
-  padding: 0;
   flex-direction: column;
-  list-style: none;
+  @include list-reset;
 }
 
 .series__item {
@@ -47,8 +45,61 @@
 }
 
 
+@media (min-width: $tablet) {
+
+  .series {
+    padding: 0 30px;
+  }
+
+  .series__item {
+
+    &:first-child {
+      margin-top: 0;
+    }
+
+    margin-top: 30px;
+    padding-left: 55px;
+    padding-right: 330px;
+  }
+
+  .series__title {
+    margin-left: 0;
+    margin-top: 65px;
+    font-size: 36px;
+    line-height: 37px;
+  }
+
+  .series__description {
+    border: none;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .series__link  {
+    margin-bottom: 45px;
+    font-size: 20px;
+    line-height: 20px;
+  }
+}
+
 @media (min-width: $desktop) {
   .series {
-    margin-top: 50px;
+    margin-top: 100px;
+    padding: 0 110px;
+  }
+
+  .series__list {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .series__item {
+    max-width: 570px;
+    margin: 0;
+    padding-right: 50px;
+  }
+
+  .series__title {
+    margin-left: 110px;
   }
 }

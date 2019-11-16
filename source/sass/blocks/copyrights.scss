@@ -11,3 +11,9 @@
   font-family: $font-alt;
   text-decoration: none;
 }
+
+@media (min-width: $tablet) {
+  .copyrights__link {
+    margin-right: 23px;
+  }
+}
