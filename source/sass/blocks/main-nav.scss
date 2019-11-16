@@ -55,4 +55,20 @@
   .main-nav__item{
     border: none;
   }
+
+}
+
+@media (min-width: $desktop) {
+
+  .main-nav {
+    min-width: 480px;
+    font-size: 20px;
+  }
+
+  .main-nav__link {
+
+    &--index-page {
+      color: #ffffff;
+    }
+  }
 }

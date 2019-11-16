@@ -45,3 +45,10 @@
   text-decoration: none;
   text-transform: uppercase;
 }
+
+
+@media (min-width: $desktop) {
+  .series {
+    margin-top: 50px;
+  }
+}
