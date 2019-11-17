@@ -50,6 +50,7 @@
 
 @media (min-width: $tablet) {
   .advantages {
+    padding-top: 50px;
     padding-left: 30px;
   }
 
@@ -75,6 +76,11 @@
       line-height: 200px;
       z-index: 10;
     }
+  }
+
+  .advantages__title {
+    margin-bottom: 60px;
+    font-size: 60px;
   }
 
   .advantages__text {

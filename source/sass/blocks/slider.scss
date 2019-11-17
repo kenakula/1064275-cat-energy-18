@@ -21,3 +21,43 @@
   height: 14px;
   background-color: $green;
 }
+
+@media (min-width: $tablet) {
+  .slider__item {
+    top: -50px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .slider__controls {
+    margin-bottom: 50px;
+  }
+
+  .slider__controls {
+    justify-content: space-between;
+    align-self: center;
+    width: 570px;
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .slider__range {
+    width: 425px;
+    height: 7px;
+    background-color: $border-color-alt;
+    border-radius: 5px;
+  }
+
+  .slider__button {
+    padding: 0;
+    padding-bottom: 5px;
+    border-bottom: 1px dotted #bebebe;
+    color: $black;
+  }
+}
+
+@media (min-width: $desktop) {
+  .slider__controls {
+    margin-top: 290px;
+  }
+}
