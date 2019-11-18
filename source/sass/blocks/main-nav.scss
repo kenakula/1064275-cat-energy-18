@@ -10,7 +10,6 @@
   position: absolute;
   top: -35px;
   right: 20px;
-  //временно
   width: 25px;
   height: 25px;
   font-size: 0;
@@ -53,6 +52,10 @@
 
   .main-nav__item {
     border: none;
+  }
+
+  .main-nav__toggle {
+    display: none;
   }
 }
 
