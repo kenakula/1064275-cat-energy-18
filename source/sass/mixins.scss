@@ -1,0 +1,14 @@
+@mixin list-reset {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+@mixin text-input {
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+  padding-left: 15px;
+  height: 45px;
+  border: 1px solid $input-border;
+}

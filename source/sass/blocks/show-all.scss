@@ -1,26 +1,36 @@
 .show-all {
   display: flex;
   flex-direction: column;
+  justify-content: flex-end;
   align-items: center;
-  border-top: 1px solid #ededed;
+  min-height: 210px;
+  padding-bottom: 25px;
+  border-top: 1px solid $border-color;
+  border-bottom: 1px solid $border-color;
 }
 
 .show-all__title {
-  color: #111111;
+  margin: 0;
+  margin-bottom: 5px;
+  padding: 0;
+  color: $black;
+  font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
 }
 
 .show-all__text {
-  color: #444444;
+  margin: 0;
+  color: $dark-grey;
   font-size: 12px;
   line-height: 16px;
 }
 
 .show-all__button {
   align-self: stretch;
+  margin-top: 15px;
   font-size: 16px;
   line-height: 20px;
-  color: #444444;
-  background-color: #f2f2f2;
+  color: $dark-grey;
+  background-color: $bg-grey;
 }

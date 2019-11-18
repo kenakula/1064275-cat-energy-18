@@ -1,5 +1,5 @@
 .main-nav {
-  font-family: "Oswald-Medium", "Verdana", sans-serif;
+  font-family: $font-medium;
   font-weight: 600;
   font-size: 20px;
   line-height: 20px;
@@ -16,12 +16,12 @@
 .main-nav__item {
   display: flex;
   justify-content: center;
-  border-top: 1px solid #e6e6e6;
+  border-top: 1px solid $border-color;
 }
 
 .main-nav__link {
   padding: 15px 0;
   text-transform: uppercase;
-  color: #111111;
+  color: $black;
   text-decoration: none;
 }
