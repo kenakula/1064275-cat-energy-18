@@ -28,7 +28,8 @@
     width: 50%;
     height: 696px;
     background-image: url("../img/index-background-desktop@1x.jpg");
-    background-size: auto;
+    background-size: cover;
+    background-repeat: no-repeat;
   }
 
   .page-header__wrapper {
