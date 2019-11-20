@@ -1,4 +1,9 @@
-.contacts__wraper {
+.contacts {
+  margin-top: 35px;
+  background-color: $bg-grey;
+}
+
+.contacts__wrapper {
   display: flex;
   justify-content: space-between;
   align-items: center;
