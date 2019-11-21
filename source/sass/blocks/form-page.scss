@@ -1,11 +1,24 @@
 .form-page__text {
+  padding: 0 20px;
   margin: 0;
   margin-bottom: 40px;
-  padding: 0 20px;
   width: 300px;
   text-transform: uppercase;
 }
 
-.form-page__form {
+.form-page__wrapper {
   padding: 0 20px;
+}
+
+@media (min-width: $tablet) {
+  .form-page__wrapper {
+    padding: 0 70px;
+  }
+
+  .form-page__text {
+    padding: 0;
+    width: 330px;
+    font-size: 20px;
+    line-height: 30px;
+  }
 }

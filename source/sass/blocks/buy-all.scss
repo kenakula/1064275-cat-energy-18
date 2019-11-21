@@ -8,3 +8,21 @@
   color: #ffffff;
   text-align: center;
 }
+
+.additionals__line-break {
+  display: none;
+}
+
+@media (min-width: $tablet) {
+  .buy-all__text {
+    margin: 0;
+    margin-right: 125px;
+    margin-left: auto;
+    width: 165px;
+    text-align: left;
+  }
+
+  .additionals__line-break {
+    display: block;
+  }
+}

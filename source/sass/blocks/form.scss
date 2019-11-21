@@ -36,7 +36,12 @@
 
 .user-data__input,
 .user-contacts__input {
-  @include text-input;
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+  padding-left: 15px;
+  height: 45px;
+  border: 1px solid $input-border;
 }
 
 .user-data__input::placeholder,
@@ -76,4 +81,37 @@
   margin-top: 15px;
   text-align: center;
   color: $dark-grey;
+}
+
+@media (min-width: $tablet) {
+  .form__field {
+    border: none;
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .user-data__input::placeholder,
+  .user-contacts__input::placeholder,
+  .user-comment__textarea {
+    font-size: 20px;
+  }
+
+  .user-target {
+    padding-top: 25px;
+    padding-left: 25px;
+    border: 1px solid $border-color-alt;
+  }
+
+  .form__button {
+    display: inline-block;
+    width: 280px;
+  }
+
+  .form__caption {
+    display: inline-block;
+    margin-left: 60px;
+    height: 50px;
+    font-size: 16px;
+    line-height: 16px;
+  }
 }

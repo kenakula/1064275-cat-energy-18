@@ -25,3 +25,35 @@
   line-height: 20px;
   color: $dark-grey;
 }
+
+.contacts__map iframe {
+  width: 100%;
+}
+
+@media (min-width: $tablet) {
+  .contacts {
+    background-color: #ffffff;
+  }
+
+  .contacts__wrapper {
+    display: flex;
+    margin-bottom: 60px;
+    padding: 0 70px;
+    min-height: 75px;
+  }
+
+  .contacts__slogan {
+    width: 155px;
+    font-size: 20px;
+    line-height: 25px;
+  }
+
+  .contacts__address {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-self: stretch;
+    width: 155px;
+    font-size: 16px;
+  }
+}

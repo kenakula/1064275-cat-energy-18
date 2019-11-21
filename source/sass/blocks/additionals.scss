@@ -1,0 +1,11 @@
+@media (min-width: $tablet) {
+  .additionals {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .additionals__wrapper {
+    margin-bottom: 40px;
+    width: 50%;
+  }
+}
