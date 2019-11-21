@@ -1,4 +1,9 @@
-.contacts__wraper {
+.contacts {
+  margin-top: 35px;
+  background-color: $bg-grey;
+}
+
+.contacts__wrapper {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -7,6 +12,7 @@
 }
 
 .contacts__slogan {
+  margin: 0;
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;

@@ -24,10 +24,16 @@ input[type="radio"].visually-hidden {
 }
 
 body {
-  width: 320px;
+  margin: 0;
+  padding: 0;
   font-family: $font-regular;
   font-size: 14px;
   line-height: 18px;
   font-weight: 400;
   background-color: #ffffff;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
 }

@@ -1,8 +1,17 @@
 .main-nav {
+  position: relative;
   font-family: $font-medium;
   font-weight: 600;
   font-size: 20px;
   line-height: 20px;
+}
+
+.main-nav__toggle {
+  position: absolute;
+  top: -40px;
+  right: 20px;
+  width: 25px;
+  height: 19px;
 }
 
 .main-nav__list {
@@ -24,4 +33,40 @@
   text-transform: uppercase;
   color: $black;
   text-decoration: none;
+}
+
+@media (min-width: $tablet) {
+  .main-nav {
+    min-width: 440px;
+    font-family: $font-regular;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 25px;
+  }
+
+  .main-nav__list {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .main-nav__item {
+    border: none;
+  }
+
+  .main-nav__toggle {
+    display: none;
+  }
+}
+
+@media (min-width: $desktop) {
+  .main-nav {
+    min-width: 480px;
+    font-size: 20px;
+  }
+
+  .main-nav__link {
+    &--index-page {
+      color: #ffffff;
+    }
+  }
 }
