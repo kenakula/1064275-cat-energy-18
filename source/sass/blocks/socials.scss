@@ -1,9 +1,6 @@
 .socials__list {
+  @include list-reset;
   display: flex;
   list-style: none;
   justify-content: center;
-}
-
-.socials__item {
-  margin: 0 15px;
 }
