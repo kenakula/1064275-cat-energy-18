@@ -1,5 +1,5 @@
 .form-page__text {
-  padding: 0 20px;
+  padding-right: 50px;
   margin: 0;
   margin-bottom: 40px;
   width: 300px;
@@ -20,5 +20,11 @@
     width: 330px;
     font-size: 20px;
     line-height: 30px;
+  }
+}
+
+@media (min-width: $desktop) {
+  .form-page__wrapper {
+    padding: 0 110px;
   }
 }

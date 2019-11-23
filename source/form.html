@@ -38,36 +38,38 @@
           программу питания для вашего кота
         </p>
         <form  class="form-page__form form" action="https://echo.htmlacademy.ru" method="GET">
-          <fieldset class="form__field user-data">
-            <legend class="visually-hidden">Данные о котике</legend>
-            <div class="form__wrapper">
-              <label class="form__label user-data__label" for="catName">Имя:*</label>
-              <input class="form__input user-data__input" type="text" id="catName" placeholder="Барсик" required>
-            </div>
-            <div class="form__wrapper">
-              <label class="form__label user-data__label" for="catWeight">Вес (кг):*</label>
-              <input class="form__input user-data__input" type="tel" id="catWeight" placeholder="7" required>
-            </div>
-            <div class="form__wrapper">
-              <label class="form__label user-data__label" for="catAge">Возраст (лет):</label>
-              <input class="form__input user-data__input" type="tel" id="catAge" placeholder="7">
-            </div>
-          </fieldset>
-          <fieldset class="form__field user-target">
-            <legend class="visually-hidden">Цель котика</legend>
-            <div class="form__wrapper">
-              <input  class="form__input form__input--radio" name="user-target" value="slimming" type="radio" id="slimming" checked>
-              <label for="slimming" class="form__label user-target__label">Похудение</label>
-            </div>
-            <div class="form__wrapper">
-              <input  class="form__input form__input--radio" name="user-target" value="massGain" type="radio" id="massGain">
-              <label for="massGain" class="form__label user-target__label">Набор массы</label>
-            </div>
-            <div class="form__wrapper">
-              <input  class="form__input form__input--radio" name="user-target" value="needsAdvise" type="radio" id="needsAdvise">
-              <label for="needsAdvise" class="form__label user-target__label">Не знаю (Нужен ваш совет)</label>
-            </div>
-          </fieldset>
+          <div class="form-field__wrapper">
+            <fieldset class="form__field user-data">
+              <legend class="visually-hidden">Данные о котике</legend>
+              <div class="form__wrapper">
+                <label class="form__label user-data__label" for="catName">Имя:*</label>
+                <input class="form__input user-data__input" type="text" id="catName" placeholder="Барсик" required>
+              </div>
+              <div class="form__wrapper">
+                <label class="form__label user-data__label" for="catWeight">Вес (кг):*</label>
+                <input class="form__input user-data__input" type="tel" id="catWeight" placeholder="7" required>
+              </div>
+              <div class="form__wrapper">
+                <label class="form__label user-data__label" for="catAge">Возраст (лет):</label>
+                <input class="form__input user-data__input" type="tel" id="catAge" placeholder="7">
+              </div>
+            </fieldset>
+            <fieldset class="form__field user-target">
+              <legend class="visually-hidden">Цель котика</legend>
+              <div class="form__wrapper">
+                <input  class="form__input form__input--radio" name="user-target" value="slimming" type="radio" id="slimming" checked>
+                <label for="slimming" class="form__label user-target__label">Похудение</label>
+              </div>
+              <div class="form__wrapper">
+                <input  class="form__input form__input--radio" name="user-target" value="massGain" type="radio" id="massGain">
+                <label for="massGain" class="form__label user-target__label">Набор массы</label>
+              </div>
+              <div class="form__wrapper">
+                <input  class="form__input form__input--radio" name="user-target" value="needsAdvise" type="radio" id="needsAdvise">
+                <label for="needsAdvise" class="form__label user-target__label">Не знаю (Нужен ваш совет)</label>
+              </div>
+            </fieldset>
+          </div>
           <fieldset class="form__field user-contacts">
             <legend class="form__legend">Контактные данные (владельца кота)</legend>
             <div class="form__wrapper">
@@ -109,7 +111,7 @@
       </div>
       <section class="contacts">
         <h2 class="visually-hidden">Контакты</h2>
-        <div class="contacts__wrapper wrapper">
+        <div class="contacts__wrapper contacts__wrapper--inner-page wrapper">
           <p class="contacts__slogan">
             Приглашаем к сотрудничеству дилеров!
           </p>
@@ -118,7 +120,7 @@
           </address>
         </div>
         <div class="contacts__map">
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d420.1565038540739!2d30.32273309762972!3d59.93857332416266!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1573320531410!5m2!1sru!2sru" width="320" height="400" style="border:0;" allowfullscreen=""></iframe>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d420.1565038540739!2d30.32273309762972!3d59.93857332416266!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1573320531410!5m2!1sru!2sru" width="320" height="362" style="border:0;" allowfullscreen=""></iframe>
         </div>
       </section>
     </main>

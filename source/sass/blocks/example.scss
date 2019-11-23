@@ -35,7 +35,7 @@
     font-size: 12px;
     line-height: 12px;
     color: $dark-grey;
-    border: 1px solid $border-color-alt;
+    border: 1px solid $input-border;
   }
 
   dt {
@@ -49,9 +49,9 @@
     position: absolute;
     bottom: -15px;
     display: block;
-    width: 87px;
     margin: 0;
     padding: 0 15px;
+    width: 87px;
     background-color: $bg-grey;
     font-family: $font-alt;
     text-align: center;

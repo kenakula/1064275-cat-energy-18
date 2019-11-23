@@ -8,7 +8,6 @@
   border: none;
   border-bottom: 1px solid $border-color;
   font-size: 16px;
-  text-transform: uppercase;
   color: $black-alt;
 }
 
@@ -25,6 +24,10 @@
   &--checkbox {
     margin-right: 15px;
   }
+}
+
+.form__label {
+  text-transform: uppercase;
 }
 
 .user-data__label,
@@ -81,6 +84,7 @@
   margin-top: 15px;
   text-align: center;
   color: $dark-grey;
+  line-height: 16px;
 }
 
 @media (min-width: $tablet) {
@@ -113,5 +117,47 @@
     height: 50px;
     font-size: 16px;
     line-height: 16px;
+  }
+}
+
+@media (min-width: $desktop) {
+  .form__field {
+    padding: 0;
+  }
+
+  .user-target {
+    justify-content: center;
+    margin-bottom: 40px;
+    padding-left: 25px;
+  }
+
+  .form__legend {
+    margin: 70px 0;
+    font-size: 36px;
+    line-height: 36px;
+  }
+
+  .form-field__wrapper {
+    display: flex;
+    justify-content: space-between;
+
+    .form__field {
+      width: 570px;
+    }
+  }
+
+  .form__wrapper {
+    padding: 0;
+    padding-bottom: 20px;
+  }
+
+  .user-contacts {
+    flex-direction: row;
+    justify-content: space-between;
+
+    .form__wrapper {
+      width: 570px;
+      padding: 0;
+    }
   }
 }
