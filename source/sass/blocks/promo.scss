@@ -32,9 +32,9 @@
 
 .promo__image-wrapper {
   position: absolute;
+  top: 165px;
   min-height: 280px;
   min-width: 320px;
-  top: 165px;
   background-image: url("../img/index-can-mobile@1x.png");
   background-position: center center;
   background-repeat: no-repeat;
@@ -43,8 +43,8 @@
 .promo__button {
   align-self: stretch;
   margin: 0 auto;
-  width: 280px;
   margin-top: 320px;
+  width: 280px;
   background-color: $green;
   color: #ffffff;
 }
@@ -59,7 +59,6 @@
     padding-left: 90px;
     margin-bottom: 530px;
     background-image: none;
-    background-color: #ffffff;
   }
 
   .promo__title {
@@ -86,10 +85,7 @@
     position: relative;
     margin: 0;
     margin-top: 48px;
-    padding-top: 17px;
-    padding-bottom: 15px;
-    padding-left: 23px;
-    padding-right: 23px;
+    padding: 17px 23px 15px 23px;
     font-size: 20px;
     line-height: 20px;
     z-index: 10;

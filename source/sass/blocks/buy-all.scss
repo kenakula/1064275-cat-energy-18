@@ -8,3 +8,21 @@
   color: #ffffff;
   text-align: center;
 }
+
+@media (min-width: $tablet) {
+  .buy-all__text {
+    margin: 0;
+    margin-right: 125px;
+    margin-left: auto;
+    width: 165px;
+    text-align: left;
+  }
+}
+
+@media (min-width: $desktop) {
+  .buy-all__text {
+    margin: 0;
+    margin-bottom: 45px;
+    text-align: center;
+  }
+}
