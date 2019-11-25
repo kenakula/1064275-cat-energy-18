@@ -2,24 +2,44 @@
   position: absolute;
   width: 100%;
   min-height: 232px;
+
+  &--hidden {
+    display: none;
+  }
 }
 
 .slider__controls {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 250px;
+  margin-top: 261px;
   font-size: 16px;
   line-height: 20px;
 }
 
-// другой блок?
-
 .slider__range {
-  margin: 0;
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin: 0 5px;
+  margin-left: 11px;
+  padding: 0 4px;
   width: 84px;
   height: 14px;
-  background-color: $green;
+  border: 1px solid #cdcdcd;
+  border-radius: 7px;
+  background-color: #ffffff;
+}
+
+//?
+
+.range__button {
+  position: absolute;
+  width: 40px;
+  height: 6px;
+  border: none;
+  border-radius: 7px;
+  background: $green;
 }
 
 @media (min-width: $tablet) {

@@ -11,7 +11,7 @@
 
 .promo__title {
   margin: 0;
-  margin-top: 25px;
+  margin-top: 27px;
   padding: 0;
   width: 250px;
   font-size: 36px;
@@ -22,7 +22,7 @@
 }
 
 .promo__slogan {
-  margin-top: 19px;
+  margin-top: 24px;
   line-height: 14px;
   font-weight: 400;
   text-transform: uppercase;
@@ -32,7 +32,7 @@
 
 .promo__image-wrapper {
   position: absolute;
-  top: 165px;
+  top: 160px;
   min-height: 280px;
   min-width: 320px;
   background-image: url("../img/index-can-mobile@1x.png");
@@ -43,7 +43,7 @@
 .promo__button {
   align-self: stretch;
   margin: 0 auto;
-  margin-top: 320px;
+  margin-top: 301px;
   width: 280px;
   background-color: $green;
   color: #ffffff;

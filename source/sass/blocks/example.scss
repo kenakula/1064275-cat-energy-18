@@ -1,5 +1,5 @@
 .example {
-  padding: 20px 0;
+  padding: 19px 0 26px;
   background-color: $bg-grey;
 }
 
@@ -15,6 +15,9 @@
 }
 
 .example__text {
+  margin: 0;
+  margin-top: 24px;
+  padding-right: 5px;
   font-family: $font-alt;
   color: $dark-grey;
 }
@@ -22,7 +25,7 @@
 .example__stats {
   display: flex;
   justify-content: space-between;
-  margin-top: 27px;
+  margin-top: 12px;
 
   dl {
     position: relative;
@@ -39,10 +42,12 @@
   }
 
   dt {
+    margin-bottom: 4px;
     font-size: 24px;
     line-height: 24px;
     color: $black;
     text-align: center;
+    text-transform: uppercase;
   }
 
   dd {
@@ -59,7 +64,7 @@
 }
 
 .example__price {
-  margin-top: 30px;
+  margin-top: 22px;
   line-height: 20px;
   text-align: center;
   text-transform: uppercase;
@@ -69,7 +74,7 @@
   position: relative;
   display: flex;
   flex-direction: column;
-  margin-top: 44px;
+  margin-top: 34px;
 }
 
 @media (min-width: $tablet) {

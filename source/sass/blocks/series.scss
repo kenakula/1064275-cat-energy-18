@@ -22,7 +22,7 @@
     position: absolute;
     left: 0;
     content: "";
-    margin-top: 22px;
+    margin-top: 24px;
     margin-left: 22px;
     width: 50px;
     height: 50px;
@@ -36,7 +36,7 @@
     position: absolute;
     content: "";
     left: 10px;
-    margin-top: 20px;
+    margin-top: 23px;
     margin-left: 20px;
     width: 35px;
     height: 49px;
@@ -46,7 +46,7 @@
   }
 
   &--gain::after {
-    top: 15px;
+    top: 11px;
     left: -7px;
     width: 67px;
     height: 28px;
@@ -55,8 +55,8 @@
 }
 
 .series__title {
-  margin-top: 25px;
-  margin-left: 90px;
+  margin-top: 30px;
+  margin-left: 70px;
   font-size: 24px;
   line-height: 37px;
   font-weight: normal;
@@ -65,15 +65,17 @@
 
 .series__description {
   margin: 0;
+  margin-top: 6px;
   padding: 0;
-  padding-bottom: 23px;
+  padding-bottom: 19px;
   border-bottom: 1px solid $border-color-alt;
   color: $dark-grey;
   font-family: $font-alt;
 }
 
 .series__link {
-  margin: 20px 0;
+  position: relative;
+  margin: 21px 0;
   color: $black;
   font-size: 16px;
   line-height: 16px;
@@ -83,7 +85,8 @@
   &::before {
     position: absolute;
     content: "";
-    left: 120px;
+    left: 96px;
+    top: 2px;
     width: 25px;
     height: 12px;
     background-image: url(../../img/icon-right-arrow-long.svg);
