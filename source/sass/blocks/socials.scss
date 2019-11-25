@@ -6,3 +6,16 @@
   align-items: center;
   min-height: 63px;
 }
+
+.socials__item {
+  margin-right: 35px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.socials__icon {
+  width: 20px;
+  height: 20px;
+}
