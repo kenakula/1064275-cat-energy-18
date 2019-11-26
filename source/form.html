@@ -71,7 +71,7 @@
             </fieldset>
           </div>
           <fieldset class="form__field user-contacts">
-            <legend class="form__legend">Контактные данные (владельца кота)</legend>
+            <legend class="form__legend form__legend--contacts">Контактные данные (владельца кота)</legend>
             <div class="form__wrapper">
               <label for="email" class="form__label user-contacts__label">E-mail:*</label>
               <input class="form__input user-contacts__input" type="email" id="email" placeholder="kuklachev@gmail.com" required>
@@ -82,12 +82,12 @@
             </div>
           </fieldset>
           <fieldset class="form__field user-comment">
-            <legend class="form__legend">Комментарий</legend>
+            <legend class="form__legend form__legend--comment">Комментарий</legend>
 
-            <textarea class="form__input user-comment__textarea" name="user-comment" id="user-comment" cols="30" rows="5" placeholder="Расскажите обо всех повадках кота"></textarea>
+            <textarea class="form__input user-comment__textarea" name="user-comment" id="user-comment" placeholder="Расскажите обо всех повадках кота"></textarea>
           </fieldset>
           <fieldset class="form__field additionals">
-            <legend class="form__legend">Дополнительно</legend>
+            <legend class="form__legend form__legend--additionals">Дополнительно</legend>
             <div class="additionals__wrapper form__wrapper">
               <input  class="form__input form__input--checkbox" name="sweetener" value="sweetener" type="checkbox" id="sweetener" checked>
               <label for="sweetener" class="form__label additionals__label">Сахарозаменитель</label>
@@ -111,9 +111,9 @@
       </div>
       <section class="contacts">
         <h2 class="visually-hidden">Контакты</h2>
-        <div class="contacts__wrapper contacts__wrapper--inner-page wrapper">
+        <div class="contacts__wrapper contacts__wrapper--form-page wrapper">
           <p class="contacts__slogan">
-            Приглашаем к сотрудничеству дилеров!
+            Приглашаем<br> к сотрудничеству дилеров!
           </p>
           <address class="contacts__address">
             ул. Большая Конюшенная, д. 19/8 <span class="contacts__city">Санкт-Петербург</span>
@@ -156,9 +156,6 @@
               <a href="#" class="socials__link">
                 <svg class="socials__icon socials__icon--insta" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                 viewBox="0 0 16.1 16" style="enable-background:new 0 0 16.1 16;" xml:space="preserve">
-                <style type="text/css">
-                .st0{fill:#231F20;}
-                </style>
                 <path class="st0" d="M11.8,1C13.6,1,15,2.4,15,4.2v7.7c0,1.7-1.4,3.1-3.1,3.1H4.2C2.4,15,1,13.6,1,11.8V4.2C1,2.4,2.4,1,4.2,1H11.8
                 M11.8,0H4.2C1.9,0,0,1.9,0,4.2v7.7C0,14.1,1.9,16,4.2,16h7.7c2.3,0,4.2-1.9,4.2-4.2V4.2C16,1.9,14.1,0,11.8,0z"/>
                 <path class="st0" d="M8,4.9c1.7,0,3.1,1.4,3.1,3.1S9.7,11.1,8,11.1S4.9,9.7,4.9,8S6.3,4.9,8,4.9 M8,3.9C5.7,3.9,3.9,5.7,3.9,8
@@ -181,7 +178,7 @@
             </li>
           </ul>
         </div>
-        <div class="copyrights">
+        <div class="page-footer__copyrights copyrights">
           <a class="copyrights__link" href="https://htmlacademy.ru/intensive/adaptive">
             HTML Academy
           </a>

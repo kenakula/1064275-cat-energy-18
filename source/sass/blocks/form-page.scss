@@ -1,13 +1,11 @@
 .form-page__text {
   padding-right: 50px;
+  padding-left: 20px;
   margin: 0;
-  margin-bottom: 40px;
+  margin-top: 24px;
+  margin-bottom: 29px;
   width: 300px;
   text-transform: uppercase;
-}
-
-.form-page__wrapper {
-  padding: 0 20px;
 }
 
 @media (min-width: $tablet) {
