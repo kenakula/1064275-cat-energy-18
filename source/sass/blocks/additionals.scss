@@ -23,7 +23,7 @@
 }
 
 .form__input--checkbox:checked + label::before {
-  background-image: url(../../img/icon-tick.svg);
+  background-image: url("../img/icon-tick.svg");
 }
 
 @media (min-width: $tablet) {
