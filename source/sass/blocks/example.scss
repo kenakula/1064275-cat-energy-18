@@ -79,7 +79,7 @@
 
 @media (min-width: $tablet) {
   .example {
-    padding-top: 50px;
+    padding-top: 46px;
     padding-bottom: 0;
     border-top: 1px solid $border-color;
     background-color: #ffffff;
@@ -104,6 +104,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-top: 42px;
   }
 
   .example__stats {
@@ -138,7 +139,7 @@
   }
 
   .example__slider {
-    margin-top: 240px;
+    margin-top: 244px;
     background-color: $bg-grey;
   }
 }

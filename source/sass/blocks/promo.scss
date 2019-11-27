@@ -57,12 +57,13 @@
   .promo__wrapper {
     align-items: flex-start;
     padding-left: 90px;
-    margin-bottom: 530px;
+    margin-bottom: 528px;
     background-image: none;
   }
 
   .promo__title {
     position: relative;
+    margin-top: 53px;
     width: 420px;
     color: $black;
     font-size: 60px;
@@ -73,7 +74,7 @@
 
   .promo__slogan {
     position: relative;
-    margin-top: 30px;
+    margin-top: 39px;
     color: $black;
     font-size: 20px;
     line-height: 20px;
@@ -85,7 +86,8 @@
     position: relative;
     margin: 0;
     margin-top: 48px;
-    padding: 17px 23px 15px 23px;
+    padding: 16px 10px;
+    width: 245px;
     font-size: 20px;
     line-height: 20px;
     z-index: 10;
@@ -93,8 +95,8 @@
 
   .promo__image-wrapper {
     position: absolute;
-    top: 206px;
-    right: -43px;
+    top: 244px;
+    right: 0;
     width: 710px;
     min-height: 625px;
     background-image: url("../../img/index-can-tablet@1x.jpg");
