@@ -1,17 +1,26 @@
 .inner-page__title {
   margin: 0;
-  margin-left: 20px;
-  margin-top: 15px;
   font-size: 36px;
   line-height: 60px;
+  letter-spacing: -0.7px;
   color: $black;
 }
 
+.inner-page__title-wrapper {
+  padding: 0 20px;
+  padding-top: 12px;
+}
+
 @media (min-width: $tablet) {
+  .inner-page__title-wrapper {
+    padding: 0 30px;
+    padding-top: 49px;
+  }
+
   .inner-page__title {
-    margin-left: 30px;
     font-size: 60px;
     line-height: 60px;
+    letter-spacing: -1.1px;
   }
 }
 

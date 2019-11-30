@@ -25,9 +25,13 @@
 }
 
 @media (min-width: $tablet) {
+  .buy-all_icon-wrapper {
+    left: 90px;
+  }
+
   .buy-all__text {
     margin: 0;
-    margin-right: 125px;
+    margin-right: 120px;
     margin-left: auto;
     width: 165px;
     text-align: left;

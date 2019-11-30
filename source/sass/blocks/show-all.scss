@@ -58,24 +58,29 @@
     padding: 40px;
     border: 1px solid $border-color;
     background-color: #ffffff;
+
+    &::before,
+    &::after {
+      top: 83px;
+      width: 59px;
+      margin-left: -28px;
+    }
   }
 
   .show-all__title {
-    margin-top: 160px;
+    margin-top: 124px;
+    margin-bottom: 27px;
     max-width: 150px;
     font-size: 20px;
     text-align: center;
   }
 
   .show-all__text {
-    margin-top: 28px;
+    margin: 0;
+    margin-bottom: 73px;
     max-width: 170px;
     font-size: 16px;
     text-align: center;
-  }
-
-  .show-all__button {
-    margin-top: auto;
   }
 }
 

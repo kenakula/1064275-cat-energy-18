@@ -90,7 +90,11 @@
 
 @media (min-width: $tablet) {
   .additional-goods {
-    padding: 0 30px;
+    padding: 66px 30px 71px;
+  }
+
+  .additional-goods__list {
+    margin-bottom: 69px;
   }
 
   .additional-goods__item {
@@ -105,10 +109,12 @@
   }
 
   .additional-goods__title {
-    margin-bottom: 75px;
-    margin-left: 40px;
+    margin: 0;
+    margin-bottom: 81px;
+    margin-left: 37px;
     font-size: 36px;
     line-height: 36px;
+    letter-spacing: -0.7px;
   }
 
   .additional-goods__name {
@@ -119,6 +125,7 @@
   }
 
   .additional-goods__table {
+    margin-top: 0;
     width: 50%;
     font-size: 16px;
     line-height: 20px;
@@ -134,12 +141,13 @@
 
   .additional-goods__link {
     flex-grow: 1;
-    margin-top: 25px;
+    margin-top: 20px;
     font-size: 16px;
     line-height: 20px;
   }
 
   .additional-goods__buy-all {
+    margin-top: 0;
     flex-direction: row;
     min-height: 200px;
     background-image: url("../../img/gift-photo-tablet@1x.jpg");

@@ -2,15 +2,24 @@
   padding-right: 50px;
   padding-left: 20px;
   margin: 0;
-  margin-top: 24px;
-  margin-bottom: 29px;
   width: 300px;
   text-transform: uppercase;
 }
 
+.form-page__wrapper {
+  padding-top: 25px;
+}
+
+.form-page__form {
+  padding-top: 32px;
+}
+
 @media (min-width: $tablet) {
   .form-page__wrapper {
-    padding: 0 70px;
+    padding-top: 56px;
+    padding-right: 67px;
+    padding-bottom: 0;
+    padding-left: 70px;
   }
 
   .form-page__text {
