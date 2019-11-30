@@ -4,7 +4,7 @@
 
 .advantages__title {
   margin: 0;
-  margin-bottom: 26px;
+  margin-bottom: 29px;
   padding: 0;
   font-size: 36px;
   line-height: 60px;
@@ -127,10 +127,14 @@
 
 @media (min-width: $desktop) {
   .advantages {
-    padding-left: 110px;
+    padding: 76px 30px 128px 110px;
   }
 
   .advantages__item {
     width: 325px;
+  }
+
+  .advantages__title {
+    margin-bottom: 69px;
   }
 }

@@ -147,7 +147,6 @@
 @media (min-width: $desktop) {
   .example {
     display: flex;
-    margin-top: 50px;
     padding: 0 110px;
     border: none;
     background-color: $bg-grey;
@@ -159,26 +158,32 @@
     padding: 0;
   }
 
-  .example__wrapper {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
   .example__title {
-    position: absolute;
-    top: -120px;
+    margin-top: -131px;
+    margin-bottom: 142px;
   }
 
   .example__text {
-    margin-top: 70px;
+    margin-top: 0;
+    margin-bottom: 56px;
+    padding-right: 212px;
+  }
+
+  .example__wrapper {
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 0;
+  }
+
+  .example__stats {
+    margin-bottom: 46px;
   }
 
   .example__price {
     display: flex;
     justify-content: space-between;
     width: 325px;
-    margin-top: 40px;
-    margin-bottom: 65px;
+    margin: 0;
     text-align: left;
   }
 

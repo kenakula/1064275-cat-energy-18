@@ -82,11 +82,11 @@
   text-decoration: none;
   text-transform: uppercase;
 
-  &::before {
+  &::after {
     position: absolute;
     content: "";
-    left: 96px;
-    top: 2px;
+    margin-left: 12px;
+    margin-top: 4px;
     width: 25px;
     height: 12px;
     background-image: url("../img/icon-right-arrow-long.svg");
@@ -112,6 +112,29 @@
     &--gain {
       padding-right: 311px;
     }
+
+    &::before {
+      margin: 0;
+      width: 200px;
+      height: 200px;
+      left: 447px;
+      top: 92px;
+    }
+
+    &::after {
+      top: 80px;
+      left: 476px;
+      margin: 0;
+      width: 141px;
+      height: 194px;
+    }
+
+    &--gain::after {
+      top: 133px;
+      left: 412px;
+      width: 268px;
+      height: 113px;
+    }
   }
 
   .series__title {
@@ -134,9 +157,8 @@
     font-size: 20px;
     line-height: 20px;
 
-    &::before {
-      left: 129px;
-      top: 4px;
+    &::after {
+      margin-left: 22px;
     }
   }
 }
@@ -154,10 +176,43 @@
   .series__item {
     max-width: 570px;
     margin: 0;
-    padding-right: 50px;
+    padding: 78px 52px 62px;
+
+    &::before {
+      top: 47px;
+      left: 52px;
+      width: 100px;
+      height: 100px;
+    }
+
+    &::after {
+      top: 41px;
+      left: 65px;
+      width: 71px;
+      height: 97px;
+    }
+
+    &--gain::after {
+      top: 69px;
+      left: 34px;
+      width: 134px;
+      height: 57px;
+    }
   }
 
   .series__title {
-    margin-left: 110px;
+    margin-top: 0;
+    margin-bottom: 72px;
+    margin-left: 161px;
+  }
+
+  .series__description {
+    margin: 0;
+    margin-bottom: 31px;
+    padding: 0;
+  }
+
+  .series__link {
+    margin: 0;
   }
 }

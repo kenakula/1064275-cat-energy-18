@@ -107,25 +107,31 @@
   .promo__wrapper {
     position: relative;
     margin-bottom: 0;
-    min-height: 696px;
-    padding-top: 100px;
-    padding-left: 150px;
+    min-height: 655px;
+    padding-top: 104px;
+    padding-left: 160px;
     background: none;
   }
 
   .promo__title {
-    margin-top: 20px;
+    margin-top: 0;
+    margin-bottom: 39px;
     max-width: 425px;
   }
 
   .promo__slogan {
-    margin-top: 40px;
+    margin-top: 0;
+    margin-bottom: 52px;
+  }
+
+  .promo__button {
+    margin-top: 0;
   }
 
   .promo__image-wrapper {
     position: absolute;
-    left: 455px;
-    top: 0;
+    left: 451px;
+    top: -5px;
     min-height: 550px;
     min-width: 500px;
     margin: 0;
