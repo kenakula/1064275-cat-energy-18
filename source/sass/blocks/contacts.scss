@@ -49,6 +49,12 @@
     &--catalog-page {
       padding-top: 65px;
     }
+
+    &--form-page {
+      margin-top: 0;
+      padding-top: 65px;
+      background-color: $bg-grey;
+    }
   }
 
   .contacts__slogan {

@@ -29,7 +29,7 @@
       </div>
     </header>
     <main class="inner-page form-page">
-      <div class="inner-page__title-wrapper wrapper">
+      <div class="inner-page__title-wrapper inner-page__title-wrapper--form-page wrapper">
         <h1 class="inner-page__title">Подбор программы</h1>
       </div>
       <div class="form-page__wrapper wrapper">
@@ -70,41 +70,45 @@
               </div>
             </fieldset>
           </div>
-          <fieldset class="form__field form__field--contacts">
+          <div class="form__field form__field--contacts">
             <legend class="form__legend form__legend--contacts">Контактные данные (владельца кота)</legend>
-            <div class="form__wrapper">
-              <label for="email" class="form__label form__label--contacts">E-mail:*</label>
-              <input class="form__input form__input--contacts" type="email" id="email" placeholder="kuklachev@gmail.com" required>
+            <div class="form__inner-wrap form__inner-wrap--contacts">
+              <div class="form__wrapper">
+                <label for="email" class="form__label form__label--contacts">E-mail:*</label>
+                <input class="form__input form__input--contacts" type="email" id="email" placeholder="kuklachev@gmail.com" required>
+              </div>
+              <div class="form__wrapper">
+                <label for="tel" class="form__label form__label--contacts">Телефон:*</label>
+                <input class="form__input form__input--contacts" type="tel" id="tel" placeholder="8 (960) 900-60-90" required>
+              </div>
             </div>
-            <div class="form__wrapper">
-              <label for="tel" class="form__label form__label--contacts">Телефон:*</label>
-              <input class="form__input form__input--contacts" type="tel" id="tel" placeholder="8 (960) 900-60-90" required>
-            </div>
-          </fieldset>
+          </div>
           <fieldset class="form__field form__field--comment">
             <legend class="form__legend form__legend--comment">Комментарий</legend>
 
             <textarea class="form__input form__input--comment" name="user-comment" id="user-comment" placeholder="Расскажите обо всех повадках кота"></textarea>
           </fieldset>
-          <fieldset class="form__field form__field--additionals">
+          <div class="form__field form__field--additionals">
             <legend class="form__legend form__legend--additionals">Дополнительно</legend>
-            <div class="form__wrapper form__wrapper--additionals">
-              <input  class="form__input form__input--checkbox" name="sweetener" value="sweetener" type="checkbox" id="sweetener" checked>
-              <label for="sweetener" class="form__label form__label--additionals additionals__label">Сахарозаменитель</label>
+            <div class="form__inner-wrap form__inner-wrap--additionals">
+              <div class="form__wrapper form__wrapper--additionals">
+                <input  class="form__input form__input--checkbox" name="sweetener" value="sweetener" type="checkbox" id="sweetener" checked>
+                <label for="sweetener" class="form__label form__label--additionals additionals__label">Сахарозаменитель</label>
+              </div>
+              <div class="form__wrapper form__wrapper--additionals">
+                <input  class="form__input form__input--checkbox" name="water" value="water" type="checkbox" id="water">
+                <label for="water" class="form__label form__label--additionals additionals__label">Питьевая вода</label>
+              </div>
+              <div class="form__wrapper form__wrapper--additionals">
+                <input  class="form__input form__input--checkbox" name="milk" value="milk" type="checkbox" id="milk">
+                <label for="milk" class="form__label form__label--additionals additionals__label">Молоко</label>
+              </div>
+              <div class="form__wrapper form__wrapper--additionals">
+                <input  class="form__input form__input--checkbox" name="vitamins" value="vitamins" type="checkbox" id="vitamins">
+                <label for="vitamins" class="form__label form__label--additionals additionals__label">Витамины</label>
+              </div>
             </div>
-            <div class="form__wrapper form__wrapper--additionals">
-              <input  class="form__input form__input--checkbox" name="water" value="water" type="checkbox" id="water">
-              <label for="water" class="form__label form__label--additionals additionals__label">Питьевая вода</label>
-            </div>
-            <div class="form__wrapper form__wrapper--additionals">
-              <input  class="form__input form__input--checkbox" name="milk" value="milk" type="checkbox" id="milk">
-              <label for="milk" class="form__label form__label--additionals additionals__label">Молоко</label>
-            </div>
-            <div class="form__wrapper form__wrapper--additionals">
-              <input  class="form__input form__input--checkbox" name="vitamins" value="vitamins" type="checkbox" id="vitamins">
-              <label for="vitamins" class="form__label form__label--additionals additionals__label">Витамины</label>
-            </div>
-          </fieldset>
+          </div>
           <button class="form__button button" type="submit">Отправить заявку</button>
           <small class="form__caption"><sup>*</sup> — Обязательные поля</small>
         </form>

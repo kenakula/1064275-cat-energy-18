@@ -157,10 +157,17 @@
 @media (min-width: $desktop) {
   .products {
     padding: 0 110px;
+    padding-top: 22px;
+    margin-bottom: 74px;
   }
 
   .products__item {
+    margin-top: 143px;
     width: 245px;
+
+    &:nth-child(2n) {
+      margin-bottom: 0;
+    }
   }
 
   .products__table {
