@@ -6,3 +6,38 @@
   align-items: center;
   min-height: 63px;
 }
+
+.socials__item {
+  margin-right: 35px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.socials__icon {
+  width: 20px;
+  height: 20px;
+  fill: #797979;
+}
+
+@media (min-width: $tablet) {
+  .socials__item {
+    margin-right: 28px;
+  }
+
+  .socials__icon {
+    width: 23px;
+    height: 23px;
+
+    &--vk {
+      width: 30px;
+      height: 16px;
+    }
+
+    &--fb {
+      width: 14px;
+      height: 28px;
+    }
+  }
+}

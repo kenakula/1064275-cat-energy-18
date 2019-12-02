@@ -12,8 +12,22 @@
   text-decoration: none;
 }
 
+.copyrights__logo {
+  width: 42px;
+  height: 46px;
+  margin-right: -7px;
+
+  svg {
+    width: 100%;
+  }
+
+  path {
+    fill: $dark-grey;
+  }
+}
+
 @media (min-width: $tablet) {
   .copyrights__link {
-    margin-right: 23px;
+    margin-right: 15px;
   }
 }

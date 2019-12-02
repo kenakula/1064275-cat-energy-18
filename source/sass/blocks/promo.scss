@@ -11,7 +11,7 @@
 
 .promo__title {
   margin: 0;
-  margin-top: 25px;
+  margin-top: 27px;
   padding: 0;
   width: 250px;
   font-size: 36px;
@@ -22,7 +22,7 @@
 }
 
 .promo__slogan {
-  margin-top: 19px;
+  margin-top: 24px;
   line-height: 14px;
   font-weight: 400;
   text-transform: uppercase;
@@ -32,7 +32,7 @@
 
 .promo__image-wrapper {
   position: absolute;
-  top: 165px;
+  top: 160px;
   min-height: 280px;
   min-width: 320px;
   background-image: url("../img/index-can-mobile@1x.png");
@@ -43,7 +43,7 @@
 .promo__button {
   align-self: stretch;
   margin: 0 auto;
-  margin-top: 320px;
+  margin-top: 301px;
   width: 280px;
   background-color: $green;
   color: #ffffff;
@@ -57,12 +57,13 @@
   .promo__wrapper {
     align-items: flex-start;
     padding-left: 90px;
-    margin-bottom: 530px;
+    margin-bottom: 528px;
     background-image: none;
   }
 
   .promo__title {
     position: relative;
+    margin-top: 53px;
     width: 420px;
     color: $black;
     font-size: 60px;
@@ -73,7 +74,7 @@
 
   .promo__slogan {
     position: relative;
-    margin-top: 30px;
+    margin-top: 39px;
     color: $black;
     font-size: 20px;
     line-height: 20px;
@@ -85,7 +86,8 @@
     position: relative;
     margin: 0;
     margin-top: 48px;
-    padding: 17px 23px 15px 23px;
+    padding: 16px 10px;
+    width: 245px;
     font-size: 20px;
     line-height: 20px;
     z-index: 10;
@@ -93,8 +95,8 @@
 
   .promo__image-wrapper {
     position: absolute;
-    top: 206px;
-    right: -43px;
+    top: 244px;
+    right: 0;
     width: 710px;
     min-height: 625px;
     background-image: url("../../img/index-can-tablet@1x.jpg");
@@ -105,25 +107,31 @@
   .promo__wrapper {
     position: relative;
     margin-bottom: 0;
-    min-height: 696px;
-    padding-top: 100px;
-    padding-left: 150px;
+    min-height: 655px;
+    padding-top: 104px;
+    padding-left: 160px;
     background: none;
   }
 
   .promo__title {
-    margin-top: 20px;
+    margin-top: 0;
+    margin-bottom: 39px;
     max-width: 425px;
   }
 
   .promo__slogan {
-    margin-top: 40px;
+    margin-top: 0;
+    margin-bottom: 52px;
+  }
+
+  .promo__button {
+    margin-top: 0;
   }
 
   .promo__image-wrapper {
     position: absolute;
-    left: 455px;
-    top: 0;
+    left: 451px;
+    top: -5px;
     min-height: 550px;
     min-width: 500px;
     margin: 0;

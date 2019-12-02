@@ -3,12 +3,23 @@
 }
 
 .additional-goods__title {
+  position: relative;
   margin: 0;
-  margin-top: 31px;
-  margin-bottom: 30px;
+  margin-top: 29px;
+  margin-bottom: 33px;
   font-size: 24px;
   line-height: 24px;
   color: $black;
+
+  &::after {
+    position: absolute;
+    content: "";
+    right: -117px;
+    top: 13px;
+    height: 3px;
+    width: 150px;
+    background-color: $green;
+  }
 }
 
 .additional-goods__list {
@@ -30,6 +41,9 @@
 }
 
 .additional-goods__name {
+  margin: 0;
+  margin-top: 14px;
+  margin-bottom: 6px;
   font-size: 16px;
   line-height: 16px;
   color: $black-alt;
@@ -38,8 +52,10 @@
 
 .additional-goods__table {
   margin: 0;
+  margin-top: 4px;
   padding: 0;
   width: 100%;
+  border-collapse: collapse;
   font-family: $font-alt;
   line-height: 14px;
   color: $dark-grey;
@@ -47,12 +63,15 @@
   tr {
     display: flex;
     justify-content: space-between;
+    width: 100%;
   }
 }
 
 .additional-goods__link {
   margin-top: 15px;
   background-color: $green;
+  font-size: 16px;
+  line-height: 20px;
   color: #ffffff;
 }
 
@@ -69,13 +88,13 @@
   text-decoration: none;
 }
 
-.additional-goods__line-break {
-  display: none;
-}
-
 @media (min-width: $tablet) {
   .additional-goods {
-    padding: 0 30px;
+    padding: 66px 30px 71px;
+  }
+
+  .additional-goods__list {
+    margin-bottom: 69px;
   }
 
   .additional-goods__item {
@@ -90,10 +109,12 @@
   }
 
   .additional-goods__title {
-    margin-bottom: 75px;
-    margin-left: 40px;
+    margin: 0;
+    margin-bottom: 81px;
+    margin-left: 37px;
     font-size: 36px;
     line-height: 36px;
+    letter-spacing: -0.7px;
   }
 
   .additional-goods__name {
@@ -104,6 +125,7 @@
   }
 
   .additional-goods__table {
+    margin-top: 0;
     width: 50%;
     font-size: 16px;
     line-height: 20px;
@@ -119,20 +141,17 @@
 
   .additional-goods__link {
     flex-grow: 1;
-    margin-top: 25px;
+    margin-top: 20px;
     font-size: 16px;
     line-height: 20px;
   }
 
   .additional-goods__buy-all {
+    margin-top: 0;
     flex-direction: row;
     min-height: 200px;
     background-image: url("../../img/gift-photo-tablet@1x.jpg");
     background-position: center center;
-  }
-
-  .additional-goods__line-break {
-    display: block;
   }
 }
 
@@ -143,12 +162,14 @@
 
   .additional-goods__title {
     margin-left: 0;
+    margin-bottom: 82px;
+    letter-spacing: 0;
   }
 
   .additional-goods__wrapper {
     display: flex;
     justify-content: space-between;
-    padding-bottom: 80px;
+    padding-bottom: 19px;
   }
 
   .additional-goods__list {
@@ -158,7 +179,7 @@
   .additional-goods__item {
     justify-content: space-between;
     align-items: center;
-    padding: 14px 0;
+    padding: 15px 0;
     border-left: none;
     border-right: none;
   }
@@ -169,6 +190,10 @@
 
   .additional-goods__table {
     width: 285px;
+
+    td:first-of-type {
+      flex-grow: 1;
+    }
   }
 
   .additional-goods__link {
@@ -182,6 +207,7 @@
     margin-top: 0;
     margin-left: 80px;
     width: 245px;
+    max-height: 289px;
     background-image: url("../../img/gift-photo-desktop@1x.jpg");
   }
 }

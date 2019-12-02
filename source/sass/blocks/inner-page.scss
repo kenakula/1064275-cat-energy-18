@@ -1,20 +1,45 @@
 .inner-page__title {
-  margin-left: 20px;
+  margin: 0;
   font-size: 36px;
   line-height: 60px;
   color: $black;
 }
 
+.inner-page__title-wrapper {
+  padding: 0 20px;
+  padding-top: 12px;
+}
+
 @media (min-width: $tablet) {
+  .inner-page__title-wrapper--catalog-page {
+    padding: 0 30px;
+    padding-top: 53px;
+  }
+
   .inner-page__title {
-    margin-left: 30px;
     font-size: 60px;
     line-height: 60px;
+    // letter-spacing: -1.1px;
+  }
+
+  .inner-page__title-wrapper--form-page {
+    padding-top: 49px;
   }
 }
 
 @media (min-width: $desktop) {
+  .inner-page__title-wrapper {
+    &--catalog-page {
+      padding-top: 68px;
+    }
+
+    &--form-page {
+      padding-top: 68px;
+      padding-left: 28px;
+    }
+  }
+
   .inner-page__title {
-    margin-left: 110px;
+    margin-left: 81px;
   }
 }

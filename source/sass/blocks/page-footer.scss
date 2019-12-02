@@ -12,7 +12,7 @@
 .page-footer__logo {
   display: flex;
   justify-content: center;
-  margin: 20px 0;
+  margin: 34px 0;
 }
 
 .page-footer__socials {
@@ -21,7 +21,7 @@
 }
 
 .page-footer__copyrights {
-  margin: 20px 0;
+  min-height: 80px;
 }
 
 @media (min-width: $tablet) {
@@ -39,6 +39,8 @@
 
   .page-footer__socials {
     border: none;
+    margin-left: 21px;
+    margin-bottom: 4px;
   }
 }
 
