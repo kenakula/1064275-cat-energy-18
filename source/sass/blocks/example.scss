@@ -147,9 +147,14 @@
 @media (min-width: $desktop) {
   .example {
     display: flex;
-    padding: 0 110px;
+    padding-top: 0;
     border: none;
     background-color: $bg-grey;
+  }
+
+  .example__inner {
+    display: flex;
+    padding: 0 110px;
   }
 
   .example__info {

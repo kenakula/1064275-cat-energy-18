@@ -2,6 +2,12 @@
   position: relative;
 }
 
+.contacts__inner {
+  &--catalog-page {
+    background-color: $bg-grey;
+  }
+}
+
 .contacts__wrapper {
   display: flex;
   justify-content: space-between;
@@ -11,7 +17,6 @@
 
   &--catalog-page {
     margin-top: 35px;
-    background-color: $bg-grey;
   }
 
   &--form-page {
@@ -41,6 +46,12 @@
 }
 
 @media (min-width: $tablet) {
+  .contacts__inner {
+    &--form-page {
+      background-color: $bg-grey;
+    }
+  }
+
   .contacts__wrapper {
     display: flex;
     margin-top: 5px;
@@ -53,7 +64,6 @@
     &--form-page {
       margin-top: 0;
       padding-top: 65px;
-      background-color: $bg-grey;
     }
   }
 
