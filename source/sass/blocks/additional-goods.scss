@@ -1,11 +1,11 @@
 .additional-goods {
   padding: 0 20px;
+  padding-top: 29px;
 }
 
 .additional-goods__title {
   position: relative;
   margin: 0;
-  margin-top: 29px;
   margin-bottom: 33px;
   font-size: 24px;
   line-height: 24px;
@@ -27,11 +27,13 @@
   flex-direction: column;
 
   @include list-reset;
+  margin-bottom: 39px;
 }
 
 .additional-goods__item {
   display: flex;
   flex-direction: column;
+  padding-top: 14px;
   padding-bottom: 17px;
   border-top: 1px solid $border-color;
 
@@ -42,8 +44,7 @@
 
 .additional-goods__name {
   margin: 0;
-  margin-top: 14px;
-  margin-bottom: 6px;
+  margin-bottom: 10px;
   font-size: 16px;
   line-height: 16px;
   color: $black-alt;
@@ -52,7 +53,7 @@
 
 .additional-goods__table {
   margin: 0;
-  margin-top: 4px;
+  margin-bottom: 15px;
   padding: 0;
   width: 100%;
   border-collapse: collapse;
@@ -68,7 +69,6 @@
 }
 
 .additional-goods__link {
-  margin-top: 15px;
   background-color: $green;
   font-size: 16px;
   line-height: 20px;
@@ -79,7 +79,6 @@
   display: flex;
   flex-direction: column-reverse;
   align-items: center;
-  margin-top: 39px;
   min-height: 289px;
   background-color: $green;
   background-image: url("../img/gift-photo-mobile@1x.jpg");
@@ -90,7 +89,7 @@
 
 @media (min-width: $tablet) {
   .additional-goods {
-    padding: 66px 30px 71px;
+    padding: 66px 30px 41px;
   }
 
   .additional-goods__list {
@@ -101,6 +100,7 @@
     flex-direction: row;
     flex-wrap: wrap;
     padding: 28px 38px;
+    padding-top: 24px;
     border: 1px solid $border-color-alt;
 
     &:not(:last-child) {
@@ -109,7 +109,6 @@
   }
 
   .additional-goods__title {
-    margin: 0;
     margin-bottom: 81px;
     margin-left: 37px;
     font-size: 36px;
@@ -117,14 +116,14 @@
   }
 
   .additional-goods__name {
-    margin: 0;
+    margin-bottom: 26px;
     width: 50%;
     font-size: 20px;
     line-height: 20px;
   }
 
   .additional-goods__table {
-    margin-top: 0;
+    margin: 0;
     width: 50%;
     font-size: 16px;
     line-height: 20px;
@@ -140,7 +139,6 @@
 
   .additional-goods__link {
     flex-grow: 1;
-    margin-top: 20px;
     font-size: 16px;
     line-height: 20px;
   }
@@ -156,33 +154,36 @@
 
 @media (min-width: $desktop) {
   .additional-goods {
+    margin-bottom: 22px;
     padding: 0 110px;
   }
 
   .additional-goods__title {
     margin-left: 0;
-    margin-bottom: 82px;
+    margin-bottom: 80px;
   }
 
   .additional-goods__wrapper {
     display: flex;
     justify-content: space-between;
-    padding-bottom: 19px;
   }
 
   .additional-goods__list {
     flex-grow: 1;
+    margin-right: 80px;
+    margin-bottom: 64px;
   }
 
   .additional-goods__item {
     justify-content: space-between;
-    align-items: center;
-    padding: 15px 0;
+    align-items: baseline;
+    padding: 16px 0;
     border-left: none;
     border-right: none;
   }
 
   .additional-goods__name {
+    margin: 0;
     width: 285px;
   }
 
@@ -197,13 +198,13 @@
   .additional-goods__link {
     flex-grow: 0;
     margin: 0;
+    margin-bottom: -1px;
     width: 245px;
   }
 
   .additional-goods__buy-all {
     flex-direction: column-reverse;
     margin-top: 0;
-    margin-left: 80px;
     width: 245px;
     max-height: 289px;
     background-image: url("../../img/gift-photo-desktop@1x.jpg");
