@@ -5,6 +5,7 @@
 .contacts__inner {
   &--catalog-page {
     background-color: $bg-grey;
+    margin-top: 35px;
   }
 }
 
@@ -14,10 +15,6 @@
   align-items: center;
   padding: 30px 20px;
   padding-bottom: 23px;
-
-  &--catalog-page {
-    margin-top: 35px;
-  }
 
   &--form-page {
     margin-top: 31px;

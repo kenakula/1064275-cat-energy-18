@@ -31,8 +31,6 @@
   background-color: #ffffff;
 }
 
-//?
-
 .range__button {
   position: absolute;
   width: 40px;
@@ -44,7 +42,8 @@
 
 @media (min-width: $tablet) {
   .slider__item {
-    top: -50px;
+    top: -169px;
+    left: 6px;
     display: flex;
     justify-content: center;
   }
@@ -75,6 +74,12 @@
 }
 
 @media (min-width: $desktop) {
+  .slider__item {
+    top: -155px;
+    left: -60px;
+    width: 636px;
+  }
+
   .slider__controls {
     margin-top: 365px;
   }
