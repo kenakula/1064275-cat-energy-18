@@ -3,9 +3,8 @@
 }
 
 .contacts__inner {
-  &--catalog-page {
+  &:not(.contacts__inner--index) {
     background-color: $bg-grey;
-    margin-top: 35px;
   }
 }
 
@@ -15,6 +14,10 @@
   align-items: center;
   padding: 30px 20px;
   padding-bottom: 23px;
+
+  &--catalog-page {
+    margin-top: 35px;
+  }
 
   &--form-page {
     margin-top: 31px;
@@ -43,12 +46,6 @@
 }
 
 @media (min-width: $tablet) {
-  .contacts__inner {
-    &--form-page {
-      background-color: $bg-grey;
-    }
-  }
-
   .contacts__wrapper {
     display: flex;
     padding: 60px 70px;
