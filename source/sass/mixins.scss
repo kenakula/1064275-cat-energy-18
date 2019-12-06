@@ -3,3 +3,8 @@
   padding: 0;
   list-style: none;
 }
+
+@mixin full-width($par-width) {
+  margin-left: calc(-100vw / 2 + $par-width / 2);
+  margin-right: calc(-100vw / 2 + $par-width / 2);
+}

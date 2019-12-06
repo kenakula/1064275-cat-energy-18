@@ -2,11 +2,20 @@
   display: flex;
   flex-direction: column;
   margin: 0;
-  padding: 8px 20px 9px;
+  padding: 0;
   border: none;
   border-bottom: 1px solid $border-color;
   font-size: 16px;
   color: $black-alt;
+
+  &--data {
+    padding-bottom: 9px;
+  }
+
+  &--contacts {
+    padding-top: 28px;
+    margin-bottom: 14px;
+  }
 
   &--contacts,
   &--comment {
@@ -19,8 +28,9 @@
   }
 
   &--additionals {
-    margin-bottom: 18px;
-    padding-top: 10px;
+    margin-bottom: 26px;
+    padding-top: 28px;
+    border: none;
   }
 }
 
@@ -40,24 +50,23 @@
 }
 
 .form__legend {
-  display: block;
+  position: relative;
+  margin: 0;
   margin-bottom: 26px;
+  padding: 0;
   font-size: 24px;
   line-height: 24px;
 
   &--contacts {
-    padding-top: 21px;
-    margin-bottom: 32px;
+    margin-bottom: 34px;
   }
 
   &--comment {
-    padding-top: 6px;
-    margin-bottom: 26px;
+    margin-bottom: 35px;
   }
 
   &--additionals {
     margin-bottom: 28px;
-    padding-top: 8px;
   }
 }
 
@@ -71,6 +80,7 @@
     align-items: center;
     flex-grow: 1;
     padding-left: 15px;
+    padding-right: 42px;
     width: 171px;
     height: 45px;
     border: 1px solid $input-border;
@@ -101,6 +111,7 @@
     margin: 0;
     padding-left: 16px;
     padding-top: 12px;
+    padding-right: 10px;
     width: 100%;
     min-height: 150px;
     border: 1px solid $input-border;
@@ -129,12 +140,12 @@
 
   &--target {
     position: relative;
-    margin-left: 45px;
+    padding-left: 45px;
 
     &::before {
       content: "";
       position: absolute;
-      left: -45px;
+      left: 0;
       top: -7px;
       width: 30px;
       height: 30px;
@@ -145,7 +156,7 @@
     &::after {
       content: "";
       position: absolute;
-      left: -36px;
+      left: 9px;
       top: 2px;
       width: 12px;
       height: 12px;
@@ -156,34 +167,73 @@
   }
 
   &--contacts {
+    position: relative;
     margin-right: 10px;
+
+    &::after {
+      background-position: center center;
+      background-repeat: no-repeat;
+    }
+  }
+
+  &--email::after {
+    content: "";
+    position: absolute;
+    right: -215px;
+    width: 18px;
+    height: 14px;
+    background-image: url("../img/icon-mail.svg");
+  }
+
+  &--tel::after {
+    content: "";
+    position: absolute;
+    right: -201px;
+    width: 21px;
+    height: 21px;
+    background-image: url("../img/icon-phone.svg");
   }
 
   &--additionals {
     position: relative;
-    margin-left: 45px;
+    padding-left: 45px;
 
     &::before {
       content: "";
       position: absolute;
-      left: -44px;
+      left: 0;
       top: -5px;
       width: 30px;
       height: 30px;
       border: 1px solid #cecece;
       background-repeat: no-repeat;
     }
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0px;
+      left: 5px;
+      width: 20px;
+      height: 13px;
+      border: 2px solid $green;
+      border-top: none;
+      border-right: none;
+      opacity: 0;
+      transform: rotate(-47deg);
+    }
   }
 }
 
-.form__input--checkbox:checked + label::before {
-  background-image: url("../img/icon-tick.svg");
+.form__input--checkbox:checked + label::after {
+  opacity: 1;
 }
 
 .form__button {
   margin: 0 auto;
   margin-bottom: 22px;
-  width: 280px;
+  padding: 10px;
+  width: 100%;
   font-size: 16px;
   line-height: 20px;
   color: #ffffff;

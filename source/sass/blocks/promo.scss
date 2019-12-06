@@ -1,21 +1,23 @@
-.promo__wrapper {
+.promo {
   position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-image: url("../img/index-background-mobile@1x.jpg");
-  background-repeat: no-repeat;
-  background-position: top center;
-  background-size: 100%;
+  padding-top: 27px;
+  padding-bottom: 22px;
+  background-image: url("../img/index-can-mobile@1x.png"), url("../img/index-background-mobile@1x.jpg");
+  background-repeat: no-repeat, no-repeat;
+  background-position: bottom 63px center, top center;
+  background-size: 280px, 100%;
 
   @media (min-resolution: $retina) {
-    background-image: url("../img/index-background-mobile@2x.jpg");
+    background-image: url("../img/index-can-mobile@2x.png"), url("../img/index-background-mobile@2x.jpg");
   }
 }
 
 .promo__title {
   margin: 0;
-  margin-top: 27px;
+  margin-bottom: 24px;
   padding: 0;
   width: 250px;
   font-size: 36px;
@@ -26,7 +28,6 @@
 }
 
 .promo__slogan {
-  margin-top: 24px;
   line-height: 14px;
   font-weight: 400;
   text-transform: uppercase;
@@ -34,26 +35,11 @@
   color: #ffffff;
 }
 
-.promo__image-wrapper {
-  position: absolute;
-  top: 160px;
-  min-height: 280px;
-  min-width: 320px;
-  background-image: url("../img/index-can-mobile@1x.png");
-  background-position: center center;
-  background-repeat: no-repeat;
-
-  @media (min-resolution: $retina) {
-    background-image: url("../img/index-can-mobile@2x.png");
-    background-size: 280px;
-  }
-}
-
 .promo__button {
   align-self: stretch;
   margin: 0 auto;
   margin-top: 301px;
-  width: 280px;
+  width: 100%;
   background-color: $green;
   color: #ffffff;
 }
@@ -63,7 +49,7 @@
     padding: 0 30px;
   }
 
-  .promo__wrapper {
+  .promo__inner {
     align-items: flex-start;
     padding-left: 90px;
     margin-bottom: 528px;
@@ -119,7 +105,7 @@
 }
 
 @media (min-width: $desktop) {
-  .promo__wrapper {
+  .promo__inner {
     position: relative;
     margin-bottom: 0;
     min-height: 655px;

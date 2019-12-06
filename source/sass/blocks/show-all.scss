@@ -1,9 +1,8 @@
 .show-all {
   position: relative;
-  justify-content: flex-end;
   align-items: center;
   min-height: 210px;
-  padding-bottom: 25px;
+  padding: 79px 20px 23px;
   border-bottom: 1px solid $border-color;
 
   &::before,

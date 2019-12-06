@@ -1,6 +1,6 @@
 .additional-goods {
-  padding: 0 20px;
   padding-top: 29px;
+  margin-bottom: 35px;
 }
 
 .additional-goods__title {
@@ -44,7 +44,7 @@
 
 .additional-goods__name {
   margin: 0;
-  margin-bottom: 10px;
+  margin-bottom: 11px;
   font-size: 16px;
   line-height: 16px;
   color: $black-alt;
@@ -53,7 +53,7 @@
 
 .additional-goods__table {
   margin: 0;
-  margin-bottom: 15px;
+  margin-bottom: 14px;
   padding: 0;
   width: 100%;
   border-collapse: collapse;
@@ -69,6 +69,7 @@
 }
 
 .additional-goods__link {
+  padding: 10px;
   background-color: $green;
   font-size: 16px;
   line-height: 20px;
@@ -77,7 +78,7 @@
 
 .additional-goods__buy-all {
   display: flex;
-  flex-direction: column-reverse;
+  flex-direction: column;
   align-items: center;
   min-height: 289px;
   background-color: $green;

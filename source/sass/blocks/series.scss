@@ -1,7 +1,3 @@
-.series {
-  padding: 0 20px;
-}
-
 .series__list {
   display: flex;
   flex-direction: column;
@@ -13,18 +9,15 @@
   position: relative;
   display: flex;
   flex-direction: column;
-  margin-top: 22px;
-  padding-left: 20px;
-  padding-right: 20px;
-  padding-bottom: 22px;
+  margin-bottom: 21px;
+  padding: 31px 20px 22px;
   background-color: $bg-grey;
 
   &::before {
     position: absolute;
-    left: 0;
+    top: 24px;
+    left: 22px;
     content: "";
-    margin-top: 24px;
-    margin-left: 22px;
     width: 50px;
     height: 50px;
     border-radius: 50%;
@@ -36,9 +29,8 @@
   &::after {
     position: absolute;
     content: "";
-    left: 10px;
-    margin-top: 23px;
-    margin-left: 20px;
+    top: 23px;
+    left: 30px;
     width: 35px;
     height: 49px;
     background-image: url("../img/icon-cat-slim.svg");
@@ -47,18 +39,22 @@
   }
 
   &--gain::after {
-    top: 11px;
-    left: -7px;
+    top: 35px;
+    left: 13px;
     width: 67px;
     height: 28px;
     background-image: url("../img/icon-cat-pro.svg");
+  }
+
+  &:last-child {
+    margin-bottom: 0;
   }
 }
 
 .series__title {
   margin: 0;
-  margin-top: 30px;
-  margin-left: 70px;
+  margin-bottom: 29px;
+  padding-left: 70px;
   font-size: 24px;
   line-height: 37px;
   font-weight: normal;
@@ -67,17 +63,16 @@
 
 .series__description {
   margin: 0;
-  margin-top: 30px;
+  margin-bottom: 19px;
   padding: 0;
-  padding-bottom: 19px;
-  border-bottom: 1px solid $border-color-alt;
+  padding-bottom: 21px;
+  border-bottom: 1px solid $border-color-series;
   color: $dark-grey;
   font-family: $font-alt;
 }
 
 .series__link {
   position: relative;
-  margin-top: 22px;
   color: $black;
   font-size: 16px;
   line-height: 16px;
@@ -87,8 +82,8 @@
   &::after {
     position: absolute;
     content: "";
-    margin-left: 12px;
-    margin-top: 4px;
+    top: 2px;
+    left: 96px;
     width: 25px;
     height: 12px;
     background-image: url("../img/icon-right-arrow-long.svg");

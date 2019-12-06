@@ -1,3 +1,7 @@
+.inner-page {
+  padding-top: 12px;
+}
+
 .inner-page__title {
   margin: 0;
   font-size: 36px;
@@ -7,7 +11,6 @@
 
 .inner-page__title-wrapper {
   padding: 0 20px;
-  padding-top: 12px;
 }
 
 @media (min-width: $tablet) {
@@ -19,7 +22,6 @@
   .inner-page__title {
     font-size: 60px;
     line-height: 60px;
-    // letter-spacing: -1.1px;
   }
 
   .inner-page__title-wrapper--form-page {

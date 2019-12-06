@@ -1,23 +1,23 @@
 .socials__list {
   @include list-reset;
   display: flex;
+  flex-wrap: wrap;
+  padding-top: 20px;
+  padding-bottom: 17px;
   list-style: none;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
-  min-height: 63px;
 }
 
 .socials__item {
-  margin-right: 35px;
-
-  &:last-child {
-    margin-right: 0;
-  }
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 25px;
+  height: 25px;
 }
 
 .socials__icon {
-  width: 20px;
-  height: 20px;
   fill: #797979;
 }
 
