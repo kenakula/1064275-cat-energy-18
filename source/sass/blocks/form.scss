@@ -466,24 +466,42 @@
 }
 
 @media (min-width: $desktop) {
+  .form {
+    padding: 0;
+  }
+
   .form__field {
     padding: 0;
 
     &--target {
+      margin-bottom: 0;
       padding-top: 34px;
       padding-left: 24px;
+      padding-bottom: 34px;
     }
 
     &--contacts {
       margin-bottom: 66px;
+
+      &::before {
+        width: 4000px;
+      }
     }
 
     &--comment {
       margin-bottom: 67px;
+
+      &::before {
+        width: 4000px;
+      }
     }
 
     &--additionals {
       margin-bottom: 48px;
+
+      &::before {
+        width: 4000px;
+      }
     }
   }
 
@@ -535,6 +553,16 @@
     &--additionals {
       margin-bottom: 0;
       min-width: 245px;
+    }
+  }
+
+  .form__label {
+    &--email::after {
+      right: -489px;
+    }
+
+    &--tel::after {
+      right: -469px;
     }
   }
 

@@ -106,14 +106,24 @@
 }
 
 @media (min-width: $desktop) {
+  .slider {
+    margin-right: -46px;
+    padding-bottom: 0;
+  }
+
   .slider__item {
     top: -190px;
     left: -80px;
     min-height: 517px;
-    width: 690px;
+    width: 700px;
+  }
+
+  .slider__items-list {
+    margin-top: -190px;
+    margin-bottom: 31px;
   }
 
   .slider__controls {
-    margin-top: 365px;
+    margin-left: 35px;
   }
 }

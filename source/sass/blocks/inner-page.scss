@@ -31,18 +31,13 @@
 }
 
 @media (min-width: $desktop) {
-  .inner-page__title-wrapper {
-    &--catalog-page {
-      padding-top: 68px;
-    }
-
-    &--form-page {
-      padding-top: 68px;
-      padding-left: 28px;
-    }
+  .inner-page {
+    padding-top: 67px;
   }
 
-  .inner-page__title {
-    margin-left: 81px;
+  .inner-page__title-wrapper {
+    &--catalog-page {
+      margin-bottom: 0;
+    }
   }
 }
