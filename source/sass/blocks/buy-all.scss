@@ -1,6 +1,6 @@
 .buy-all {
   position: relative;
-  padding-top: 187px;
+  padding-bottom: 42px;
 }
 
 .buy-all_icon-wrapper {
@@ -25,13 +25,15 @@
 }
 
 @media (min-width: $tablet) {
+  .buy-all {
+    padding: 30px 120px;
+  }
+
   .buy-all_icon-wrapper {
     left: 90px;
   }
 
   .buy-all__text {
-    margin: 0;
-    margin-right: 120px;
     margin-left: auto;
     width: 165px;
     text-align: left;

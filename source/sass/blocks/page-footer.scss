@@ -27,6 +27,7 @@
 
 @media (min-width: $tablet) {
   .page-footer {
+    padding: 0;
     background-color: #ffffff;
   }
 
@@ -34,18 +35,17 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding: 0 30px;
-    min-height: 150px;
+    min-height: 144px;
   }
 
   .page-footer__logo {
-    padding-bottom: 41px;
+    margin: 0;
+    padding: 0;
   }
 
   .page-footer__socials {
     border: none;
-    margin-left: 21px;
-    margin-bottom: 4px;
+    padding: 0 55px;
   }
 }
 

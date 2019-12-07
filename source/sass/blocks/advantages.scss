@@ -91,12 +91,12 @@
 
 @media (min-width: $tablet) {
   .advantages {
-    padding: 0 30px;
-    padding-top: 45px;
+    padding-top: 0;
+    padding-bottom: 0;
   }
 
   .advantages__title {
-    margin-bottom: 72px;
+    margin-bottom: 74px;
     font-size: 60px;
     line-height: 60px;
   }
@@ -110,6 +110,7 @@
 
   .advantages__item {
     padding: 0;
+    padding-top: 111px;
     margin: 0;
     margin-bottom: 87px;
     width: 324px;
@@ -121,22 +122,21 @@
     }
 
     &:nth-child(2n-1) {
-      margin-bottom: 56px;
+      margin-bottom: 54px;
     }
 
     &::after {
       position: absolute;
       counter-increment: list;
       content: counter(list);
-      top: 104px;
-      left: 109px;
+      top: 90px;
+      left: 116px;
       color: $bg-grey;
       font-size: 281px;
     }
   }
 
   .advantages__text {
-    margin-top: 113px;
     width: 260px;
     font-size: 16px;
     line-height: 24px;

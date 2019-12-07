@@ -1,25 +1,28 @@
 .additional-goods {
+  position: relative;
   padding-top: 29px;
   margin-bottom: 35px;
+
+  &::before {
+    position: absolute;
+    content: "";
+    top: 42px;
+    height: 3px;
+    width: 800px;
+    background-color: $green;
+  }
 }
 
 .additional-goods__title {
   position: relative;
+  display: inline-block;
   margin: 0;
   margin-bottom: 33px;
+  padding-right: 22px;
   font-size: 24px;
   line-height: 24px;
   color: $black;
-
-  &::after {
-    position: absolute;
-    content: "";
-    right: -117px;
-    top: 13px;
-    height: 3px;
-    width: 150px;
-    background-color: $green;
-  }
+  background-color: #ffffff;
 }
 
 .additional-goods__list {
@@ -78,7 +81,7 @@
 
 .additional-goods__buy-all {
   display: flex;
-  flex-direction: column;
+  flex-direction: column-reverse;
   align-items: center;
   min-height: 289px;
   background-color: $green;
@@ -96,6 +99,21 @@
 @media (min-width: $tablet) {
   .additional-goods {
     padding: 66px 30px 41px;
+
+    &::before {
+      top: 88px;
+      margin-left: -50%;
+      width: 1400px;
+      background-color: $green;
+    }
+  }
+
+  .additional-goods__title {
+    margin-bottom: 81px;
+    padding-left: 37px;
+    padding-right: 36px;
+    font-size: 36px;
+    line-height: 36px;
   }
 
   .additional-goods__list {
@@ -105,7 +123,7 @@
   .additional-goods__item {
     flex-direction: row;
     flex-wrap: wrap;
-    padding: 28px 38px;
+    padding: 28px 37px;
     padding-top: 24px;
     border: 1px solid $border-color-alt;
 
@@ -114,15 +132,8 @@
     }
   }
 
-  .additional-goods__title {
-    margin-bottom: 81px;
-    margin-left: 37px;
-    font-size: 36px;
-    line-height: 36px;
-  }
-
   .additional-goods__name {
-    margin-bottom: 26px;
+    margin: 0;
     width: 50%;
     font-size: 20px;
     line-height: 20px;
@@ -138,13 +149,20 @@
       justify-content: flex-end;
     }
 
-    td:first-child {
-      margin-right: 50px;
+    td {
+      padding-top: 3px;
+      width: 134px;
+      text-align: right;
+
+      &:last-child {
+        width: 30%;
+      }
     }
   }
 
   .additional-goods__link {
     flex-grow: 1;
+    margin-top: 22px;
     font-size: 16px;
     line-height: 20px;
   }

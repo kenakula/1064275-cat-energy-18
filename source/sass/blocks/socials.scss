@@ -4,7 +4,6 @@
   flex-wrap: wrap;
   padding-top: 20px;
   padding-bottom: 17px;
-  list-style: none;
   justify-content: space-around;
   align-items: center;
 }
@@ -22,8 +21,20 @@
 }
 
 @media (min-width: $tablet) {
+  .socials {
+    margin-left: 51px;
+  }
+
+  .socials__list {
+    justify-content: center;
+    padding: 0 25px;
+    width: 250px;
+  }
+
   .socials__item {
-    margin-right: 28px;
+    margin-right: 21px;
+    width: 30px;
+    height: 30px;
   }
 
   .socials__icon {

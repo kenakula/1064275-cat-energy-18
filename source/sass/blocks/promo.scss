@@ -46,46 +46,40 @@
 
 @media (min-width: $tablet) {
   .promo {
-    padding: 0 30px;
-  }
-
-  .promo__inner {
     align-items: flex-start;
-    padding-left: 90px;
-    margin-bottom: 528px;
-    background-image: none;
+    padding-left: 119px;
+    min-height: 837px;
+    background-image: url("../img/index-can-tablet@1x.jpg");
+    background-position: bottom center;
+    background-size: 709px;
   }
 
   .promo__title {
     position: relative;
-    margin-top: 53px;
+    margin-bottom: 41px;
     width: 420px;
     color: $black;
     font-size: 60px;
     line-height: 60px;
     text-align: left;
-    z-index: 10;
   }
 
   .promo__slogan {
     position: relative;
-    margin-top: 39px;
+    margin-bottom: 48px;
     color: $black;
     font-size: 20px;
     line-height: 20px;
     text-align: left;
-    z-index: 10;
   }
 
   .promo__button {
     position: relative;
     margin: 0;
-    margin-top: 48px;
     padding: 16px 10px;
     width: 245px;
     font-size: 20px;
     line-height: 20px;
-    z-index: 10;
   }
 
   .promo__image-wrapper {

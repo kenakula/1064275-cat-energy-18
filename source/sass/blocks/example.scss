@@ -74,7 +74,7 @@
 
 @media (min-width: $tablet) {
   .example {
-    padding-top: 46px;
+    padding-top: 43px;
     padding-bottom: 0;
     margin-bottom: 7px;
     border-top: 1px solid $border-color;
@@ -82,17 +82,17 @@
   }
 
   .example__info {
-    padding: 0 30px;
     margin-bottom: 243px;
     width: 768px;
   }
 
   .example__title {
-    margin-bottom: 60px;
+    margin-bottom: 64px;
     font-size: 60px;
   }
 
   .example__text {
+    margin-bottom: 41px;
     padding-right: 30px;
     font-size: 16px;
     line-height: 24px;
@@ -102,7 +102,6 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-top: 42px;
   }
 
   .example__stats {
