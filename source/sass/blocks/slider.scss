@@ -1,3 +1,8 @@
+.slider {
+  margin-left: calc(-100vw / 2 + 280px / 2);
+  margin-right: calc(-100vw / 2 + 280px / 2);
+}
+
 .slider__item {
   width: 100%;
 
@@ -44,6 +49,8 @@
     flex-direction: column;
     align-items: center;
     padding-bottom: 67px;
+    margin-left: 0;
+    margin-right: 0;
   }
 
   .slider__items-list {

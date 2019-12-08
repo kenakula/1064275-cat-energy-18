@@ -74,15 +74,21 @@
 }
 
 @media (min-width: $desktop) {
+  .contacts__inner {
+    position: relative;
+    top: 92px;
+    left: calc(50% - 720px + 111px);
+    margin-bottom: 202px;
+    width: 570px;
+    z-index: 1;
+  }
+
   .contacts__wrapper {
-    position: absolute;
     margin: 0;
     padding-top: 66px;
     padding-left: 75px;
-    background: #ffffff;
     width: 570px;
-    top: 95px;
-    left: 110px;
+    background: #ffffff;
 
     &--inner-page {
       margin: 0;
@@ -92,6 +98,12 @@
   .contacts__address {
     width: 175px;
     text-align: left;
+  }
+
+  .contacts__map {
+    position: absolute;
+    top: 0;
+    width: 100%;
   }
 
   .contacts__map iframe {

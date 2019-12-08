@@ -72,6 +72,10 @@
   text-transform: uppercase;
 }
 
+.example__wrapper {
+  margin-bottom: 34px;
+}
+
 @media (min-width: $tablet) {
   .example {
     padding-top: 43px;
@@ -110,6 +114,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: 0;
   }
 
   .example__stats {
@@ -155,7 +160,7 @@
     justify-content: center;
     margin-bottom: 0;
     padding-top: 0;
-    padding-bottom: 70px;
+    padding-bottom: 73px;
     border: none;
     background-color: $bg-grey;
   }
