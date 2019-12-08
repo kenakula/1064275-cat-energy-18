@@ -106,8 +106,14 @@
   }
 
   .main-nav__link {
+    padding: 7px 0;
+
     &--index-page {
       color: #ffffff;
+    }
+
+    &--active {
+      border-bottom: 2px solid $green;
     }
   }
 }

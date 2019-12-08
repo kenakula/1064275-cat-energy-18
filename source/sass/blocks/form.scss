@@ -95,7 +95,7 @@
     padding-right: 42px;
     width: 171px;
     height: 45px;
-    border: 1px solid $input-border;
+    border: 1px solid rgba($color: $input-border, $alpha: 0.5);
 
     &::-webkit-input-placeholder {
       font-family: $font-regular;
@@ -117,6 +117,16 @@
       color: $dark-grey;
       text-transform: uppercase;
     }
+
+    &:hover {
+      border-color: $input-border;
+    }
+
+    &:focus {
+      padding-left: 14px;
+      border: 2px solid $dark-grey;
+      outline: none;
+    }
   }
 
   &--contacts {
@@ -128,9 +138,20 @@
     padding: 12px 10px 15px 16px;
     width: 100%;
     min-height: 150px;
-    border: 1px solid $input-border;
+    border: 1px solid rgba($color: $input-border, $alpha: 0.5);
     resize: none;
     text-transform: uppercase;
+
+    &:hover {
+      border-color: $input-border;
+    }
+
+    &:focus {
+      padding-top: 11px;
+      padding-left: 15px;
+      border: 2px solid $dark-grey;
+      outline: none;
+    }
   }
 
   &--radio,
@@ -159,7 +180,7 @@
       top: -7px;
       width: 30px;
       height: 30px;
-      border: 1px solid #cecece;
+      border: 1px solid $input-border;
       border-radius: 50%;
     }
 
@@ -173,6 +194,16 @@
       border-radius: 50%;
       background-color: $green;
       opacity: 0;
+    }
+
+    &:hover {
+      &::before {
+        border-color: #bababa;
+      }
+    }
+
+    &:active {
+      opacity: 0.3;
     }
   }
 
@@ -214,7 +245,7 @@
       top: -5px;
       width: 30px;
       height: 30px;
-      border: 1px solid #cecece;
+      border: 1px solid $input-border;
       background-repeat: no-repeat;
     }
 
@@ -228,6 +259,16 @@
       background-image: url("../img/icon-tick.svg");
       background-repeat: no-repeat;
       opacity: 0;
+    }
+
+    &:hover {
+      &::before {
+        border-color: #bababa;
+      }
+    }
+
+    &:active {
+      opacity: 0.3;
     }
   }
 }
@@ -384,16 +425,28 @@
     &--data {
       padding-left: 18px;
       margin-left: 18px;
+
+      &:focus {
+        padding-left: 17px;
+      }
     }
 
     &--comment {
       padding-top: 14px;
       min-height: 174px;
+
+      &:focus {
+        padding-top: 13px;
+      }
     }
 
     &--contacts {
       padding-left: 19px;
       margin-left: 19px;
+
+      &:focus {
+        padding-left: 18px;
+      }
     }
 
     &--tel {

@@ -81,14 +81,15 @@
     margin-left: -17px;
     width: 34px;
     height: 34px;
+    border: 1px solid #d0d0d0;
     border-radius: 50%;
     background-color: #ffffff;
-    box-shadow: 0 1px 4px #000000;
+    box-shadow: 0 1px 4px #949393;
 
     &::before {
       position: absolute;
-      top: 13px;
-      left: 13px;
+      top: 12px;
+      left: 12px;
       content: "";
       width: 8px;
       height: 8px;
@@ -125,5 +126,27 @@
 
   .slider__controls {
     margin-left: 35px;
+  }
+
+  .slider__button {
+    &:hover {
+      border-bottom-style: solid;
+      background-color: $bg-grey;
+    }
+
+    &:active {
+      border: none;
+      color: $black;
+    }
+  }
+
+  .range__button {
+    &:hover {
+      box-shadow: 0 2px 5px #817f7f;
+    }
+
+    &:active {
+      border: 1px solid $green;
+    }
   }
 }

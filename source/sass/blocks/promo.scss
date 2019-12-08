@@ -115,21 +115,4 @@
   .promo__button {
     margin-top: 0;
   }
-
-  .promo__image-wrapper {
-    position: absolute;
-    left: 451px;
-    top: -5px;
-    min-height: 550px;
-    min-width: 500px;
-    margin: 0;
-    background-image: url("../img/index-can-desktop@1x.png");
-    background-repeat: no-repeat;
-    z-index: 100;
-
-    @media (min-resolution: $retina) {
-      background-image: url("../img/index-can-desktop@2x.png");
-      background-size: 552px;
-    }
-  }
 }

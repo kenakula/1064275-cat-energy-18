@@ -74,6 +74,8 @@
 
 .series__link {
   position: relative;
+  align-self: flex-start;
+  min-width: 125px;
   color: $black;
   font-size: 16px;
   line-height: 16px;
@@ -84,7 +86,7 @@
     position: absolute;
     content: "";
     top: 2px;
-    left: 96px;
+    right: 4px;
     width: 25px;
     height: 12px;
     background-image: url("../img/icon-right-arrow-long.svg");
@@ -146,12 +148,12 @@
   }
 
   .series__link {
+    min-width: 157px;
     font-size: 20px;
     line-height: 20px;
 
     &::after {
       top: 5px;
-      left: 128px;
     }
   }
 }
@@ -206,5 +208,17 @@
 
   .series__link {
     margin: 0;
+
+    &:hover {
+      &::after {
+        width: 34px;
+        right: -6px;
+        background-image: url("../img/icon-right-arrow-verylong.svg");
+      }
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
   }
 }

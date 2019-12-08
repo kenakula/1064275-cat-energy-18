@@ -42,10 +42,24 @@
         background-image: url("../img/index-background-desktop@2x.jpg");
       }
     }
+
+    &:not(.page-header--index-page) .page-header__logo {
+      &:hover {
+        opacity: 0.8;
+      }
+
+      &:active {
+        opacity: 0.6;
+      }
+    }
+
+    &--index-page .main-nav__link--active {
+      border-color: #ffffff
+    }
   }
 
   .page-header__inner {
-    padding-top: 50px;
+    padding-top: 55px;
   }
 
   .page-header__wrapper {

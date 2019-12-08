@@ -7,4 +7,12 @@
   text-decoration: none;
   background-color: transparent;
   cursor: pointer;
+
+  &:hover {
+    background-color: $green-hvr;
+  }
+
+  &:active {
+    color: rgba($color: #ffffff, $alpha: 0.3);
+  }
 }
