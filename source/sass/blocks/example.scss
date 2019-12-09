@@ -5,7 +5,9 @@
 
 .example__info {
   padding: 0 20px;
+  margin: 0 auto;
   margin-bottom: 34px;
+  width: 320px;
 }
 
 .example__title {
@@ -93,6 +95,7 @@
   .example__info {
     padding: 0 30px;
     margin-bottom: 243px;
+    width: 768px;
   }
 
   .example__title {
@@ -153,6 +156,7 @@
 @media (min-width: $desktop) {
   .example {
     display: flex;
+    justify-content: center;
     margin-bottom: 0;
     padding-top: 0;
     border: none;
@@ -166,8 +170,9 @@
 
   .example__info {
     position: relative;
-    width: auto;
+    width: 463px;
     margin-bottom: 30px;
+    margin-right: 187px;
     padding: 0;
   }
 
@@ -179,7 +184,6 @@
   .example__text {
     margin-top: 0;
     margin-bottom: 17px;
-    padding-right: 212px;
   }
 
   .example__wrapper {
@@ -190,6 +194,10 @@
 
   .example__stats {
     margin-bottom: 46px;
+
+    dd {
+      background-color: $bg-grey;
+    }
   }
 
   .example__price {
@@ -202,5 +210,6 @@
 
   .example__slider {
     margin-top: 0;
+    margin-right: auto;
   }
 }

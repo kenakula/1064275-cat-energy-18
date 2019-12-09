@@ -3,7 +3,7 @@
 }
 
 .contacts__inner {
-  &--catalog-page {
+  &:not(.contacts__inner--index) {
     background-color: $bg-grey;
   }
 }
@@ -46,12 +46,6 @@
 }
 
 @media (min-width: $tablet) {
-  .contacts__inner {
-    &--form-page {
-      background-color: $bg-grey;
-    }
-  }
-
   .contacts__wrapper {
     display: flex;
     padding: 60px 70px;

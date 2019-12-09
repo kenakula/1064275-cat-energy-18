@@ -17,6 +17,7 @@
 
   .page-header__logo {
     padding: 0;
+    width: 174px;
   }
 }
 
@@ -32,10 +33,23 @@
     background-image: url("../img/index-background-desktop@1x.jpg");
     background-size: cover;
     background-repeat: no-repeat;
+
+    @media (min-resolution: $retina) {
+      background-image: url("../img/index-background-desktop@2x.jpg");
+    }
   }
 
   .page-header__wrapper {
     padding: 0 110px;
     padding-top: 50px;
+  }
+
+  .page-header__logo {
+    width: 203px;
+  }
+
+  .page-header__image {
+    width: 203px;
+    height: 60px;
   }
 }
