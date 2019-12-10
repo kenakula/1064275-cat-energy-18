@@ -19,9 +19,6 @@
 
   svg {
     width: 100%;
-  }
-
-  path {
     fill: $dark-grey;
   }
 }
@@ -29,5 +26,15 @@
 @media (min-width: $tablet) {
   .copyrights__link {
     margin-right: 15px;
+
+    &:hover + .copyrights__logo svg {
+      fill: $green;
+    }
+  }
+
+  .copyrights__logo {
+    &:hover .copyrights__image {
+      fill: $green;
+    }
   }
 }

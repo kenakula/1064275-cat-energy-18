@@ -1,6 +1,5 @@
 .form-page__text {
   padding-right: 50px;
-  padding-left: 20px;
   margin: 0;
   width: 300px;
   text-transform: uppercase;
@@ -8,40 +7,37 @@
 
 .form-page__wrapper {
   padding-top: 25px;
+  margin-bottom: 30px;
 }
 
 .form-page__form {
-  padding-top: 32px;
+  padding-top: 40px;
 }
 
 @media (min-width: $tablet) {
-  .form-page__wrapper {
-    padding-top: 56px;
-    padding-right: 67px;
-    padding-bottom: 0;
-    padding-left: 70px;
-  }
-
   .form-page__text {
     padding: 0;
-    width: 330px;
+    padding-left: 40px;
+    margin-bottom: 32px;
+    width: 380px;
     font-size: 20px;
     line-height: 30px;
   }
 
   .form-page__form {
+    padding: 0;
     margin-bottom: 52px;
   }
 }
 
 @media (min-width: $desktop) {
-  .form-page__wrapper {
-    padding: 0 110px;
-    padding-top: 54px;
+  .form-page__text {
+    margin-bottom: 66px;
+    padding-left: 0;
   }
 
   .form-page__form {
     margin-bottom: 62px;
-    padding-top: 66px;
+    padding: 0;
   }
 }

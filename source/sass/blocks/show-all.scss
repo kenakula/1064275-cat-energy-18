@@ -1,9 +1,8 @@
 .show-all {
   position: relative;
-  justify-content: flex-end;
   align-items: center;
   min-height: 210px;
-  padding-bottom: 25px;
+  padding: 79px 20px 23px;
   border-bottom: 1px solid $border-color;
 
   &::before,
@@ -68,7 +67,7 @@
   }
 
   .show-all__title {
-    margin-bottom: 27px;
+    margin-bottom: 28px;
     max-width: 150px;
     font-size: 20px;
     text-align: center;
@@ -76,7 +75,7 @@
 
   .show-all__text {
     margin: 0;
-    margin-bottom: 88px;
+    margin-bottom: 86px;
     max-width: 170px;
     font-size: 16px;
     text-align: center;
@@ -86,5 +85,15 @@
 @media (min-width: $desktop) {
   .show-all__text {
     width: 170px;
+  }
+
+  .show-all__button {
+    &:hover {
+      background-color: #ebebeb;
+    }
+
+    &:active {
+      color: rgba($color: $dark-grey, $alpha: 0.3);
+    }
   }
 }

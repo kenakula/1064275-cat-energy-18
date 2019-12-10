@@ -1,4 +1,7 @@
 .main-nav {
+  margin-left: calc(-100vw / 2 + 280px / 2);
+  margin-right: calc(-100vw / 2 + 280px / 2);
+  //блок во всю ширину родителя
   position: relative;
   font-family: $font-medium;
   font-weight: 600;
@@ -74,6 +77,7 @@
 
 @media (min-width: $tablet) {
   .main-nav {
+    margin: 0;
     min-width: 440px;
     font-family: $font-regular;
     font-weight: normal;
@@ -102,8 +106,14 @@
   }
 
   .main-nav__link {
+    padding: 7px 0;
+
     &--index-page {
       color: #ffffff;
+    }
+
+    &--active {
+      border-bottom: 2px solid $green;
     }
   }
 }

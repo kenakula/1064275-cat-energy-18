@@ -1,9 +1,6 @@
-.series {
-  padding: 0 20px;
-}
-
 .series__list {
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
 
   @include list-reset;
@@ -13,18 +10,15 @@
   position: relative;
   display: flex;
   flex-direction: column;
-  margin-top: 22px;
-  padding-left: 20px;
-  padding-right: 20px;
-  padding-bottom: 22px;
+  margin-bottom: 21px;
+  padding: 31px 20px 22px;
   background-color: $bg-grey;
 
   &::before {
     position: absolute;
-    left: 0;
+    top: 24px;
+    left: 22px;
     content: "";
-    margin-top: 24px;
-    margin-left: 22px;
     width: 50px;
     height: 50px;
     border-radius: 50%;
@@ -36,9 +30,8 @@
   &::after {
     position: absolute;
     content: "";
-    left: 10px;
-    margin-top: 23px;
-    margin-left: 20px;
+    top: 23px;
+    left: 30px;
     width: 35px;
     height: 49px;
     background-image: url("../img/icon-cat-slim.svg");
@@ -47,18 +40,22 @@
   }
 
   &--gain::after {
-    top: 11px;
-    left: -7px;
+    top: 35px;
+    left: 13px;
     width: 67px;
     height: 28px;
     background-image: url("../img/icon-cat-pro.svg");
+  }
+
+  &:last-child {
+    margin-bottom: 0;
   }
 }
 
 .series__title {
   margin: 0;
-  margin-top: 30px;
-  margin-left: 70px;
+  margin-bottom: 29px;
+  padding-left: 70px;
   font-size: 24px;
   line-height: 37px;
   font-weight: normal;
@@ -67,17 +64,18 @@
 
 .series__description {
   margin: 0;
-  margin-top: 30px;
+  margin-bottom: 19px;
   padding: 0;
-  padding-bottom: 19px;
-  border-bottom: 1px solid $border-color-alt;
+  padding-bottom: 21px;
+  border-bottom: 1px solid $border-color-series;
   color: $dark-grey;
   font-family: $font-alt;
 }
 
 .series__link {
   position: relative;
-  margin-top: 22px;
+  align-self: flex-start;
+  min-width: 125px;
   color: $black;
   font-size: 16px;
   line-height: 16px;
@@ -87,8 +85,8 @@
   &::after {
     position: absolute;
     content: "";
-    margin-left: 12px;
-    margin-top: 4px;
+    top: 2px;
+    right: 4px;
     width: 25px;
     height: 12px;
     background-image: url("../img/icon-right-arrow-long.svg");
@@ -99,25 +97,18 @@
 
 @media (min-width: $tablet) {
   .series {
-    padding: 0 30px;
+    margin-bottom: 46px;
   }
 
   .series__item {
-    margin-top: 30px;
-    padding-left: 53px;
-    padding-right: 280px;
-    padding-bottom: 61px;
-
-    &:first-child {
-      margin-top: 0;
-    }
+    padding: 76px 280px 61px 53px;
+    margin-bottom: 31px;
 
     &--gain {
       padding-right: 311px;
     }
 
     &::before {
-      margin: 0;
       width: 200px;
       height: 200px;
       left: 447px;
@@ -127,7 +118,6 @@
     &::after {
       top: 80px;
       left: 476px;
-      margin: 0;
       width: 141px;
       height: 194px;
     }
@@ -141,33 +131,36 @@
   }
 
   .series__title {
-    margin-left: 0;
-    margin-top: 78px;
+    margin: 0;
+    margin-bottom: 25px;
+    padding: 0;
     font-size: 36px;
     line-height: 37px;
   }
 
   .series__description {
-    margin-top: 23px;
+    margin: 0;
+    margin-bottom: 56px;
+    padding: 0;
     border: none;
     font-size: 16px;
     line-height: 24px;
   }
 
   .series__link {
-    margin-top: 38px;
+    min-width: 157px;
     font-size: 20px;
     line-height: 20px;
 
     &::after {
-      margin-left: 22px;
+      top: 5px;
     }
   }
 }
 
 @media (min-width: $desktop) {
   .series {
-    padding: 0 110px;
+    margin-bottom: 0;
   }
 
   .series__list {
@@ -205,15 +198,27 @@
   .series__title {
     margin-top: 0;
     margin-left: 161px;
+    margin-bottom: 72px;
   }
 
   .series__description {
-    margin-top: 72px;
+    margin-bottom: 31px;
     padding: 0;
   }
 
   .series__link {
     margin: 0;
-    margin-top: 31px;
+
+    &:hover {
+      &::after {
+        width: 34px;
+        right: -6px;
+        background-image: url("../img/icon-right-arrow-verylong.svg");
+      }
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
   }
 }
