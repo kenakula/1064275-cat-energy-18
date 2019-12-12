@@ -28,8 +28,8 @@
   .copyrights__link {
     margin-right: 15px;
 
-    &:hover + .copyrights__logo svg {
-      fill: $green;
+    &:hover {
+      color: $green;
     }
   }
 

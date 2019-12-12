@@ -142,6 +142,7 @@
     }
 
     &:active {
+      margin-top: -1px;
       border: none;
       color: $black;
     }
