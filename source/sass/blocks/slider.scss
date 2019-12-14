@@ -103,6 +103,10 @@
       border-radius: 50%;
       background-color: $green;
     }
+
+    &:active {
+      border: 1px solid $green;
+    }
   }
 
   .slider__button {
@@ -151,10 +155,6 @@
   .range__button {
     &:hover {
       box-shadow: 0 2px 5px #817f7f;
-    }
-
-    &:active {
-      border: 1px solid $green;
     }
   }
 }

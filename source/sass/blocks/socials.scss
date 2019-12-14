@@ -16,6 +16,16 @@
   height: 25px;
 }
 
+.socials__link {
+  &:hover .socials__icon {
+    fill: $green;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
 .socials__icon {
   fill: #797979;
 }
@@ -49,18 +59,6 @@
     &--fb {
       width: 14px;
       height: 28px;
-    }
-  }
-}
-
-@media (min-width: $desktop) {
-  .socials__link {
-    &:hover .socials__icon {
-      fill: $green;
-    }
-
-    &:active {
-      opacity: 0.3;
     }
   }
 }

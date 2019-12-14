@@ -10,6 +10,10 @@
   line-height: 16px;
   font-family: $font-alt;
   text-decoration: none;
+
+  &:hover {
+    color: $green;
+  }
 }
 
 .copyrights__logo {
@@ -17,7 +21,11 @@
   height: 46px;
   margin-right: -7px;
 
-  svg {
+  &:hover .copyrights__image {
+    fill: $green;
+  }
+
+  .copyrights__image {
     width: 100%;
     height: 100%;
     fill: $dark-grey;
@@ -27,15 +35,5 @@
 @media (min-width: $tablet) {
   .copyrights__link {
     margin-right: 15px;
-
-    &:hover {
-      color: $green;
-    }
-  }
-
-  .copyrights__logo {
-    &:hover .copyrights__image {
-      fill: $green;
-    }
   }
 }
