@@ -94,6 +94,14 @@
     border: none;
   }
 
+  .main-nav__link {
+    padding: 7px 0;
+
+    &--active {
+      border-bottom: 2px solid $green;
+    }
+  }
+
   .main-nav__toggle {
     display: none;
   }
@@ -108,12 +116,13 @@
   .main-nav__link {
     padding: 7px 0;
 
+    // &--active {
+    //   border-bottom: 2px solid $green;
+    // }
+
     &--index-page {
       color: #ffffff;
-    }
-
-    &--active {
-      border-bottom: 2px solid $green;
+      border-color: #ffffff;
     }
   }
 }

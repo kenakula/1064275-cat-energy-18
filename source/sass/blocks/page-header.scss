@@ -1,3 +1,15 @@
+.page-header {
+  &:not(.page-header--index-page) .page-header__logo {
+    &:hover {
+      opacity: 0.8;
+    }
+
+    &:active {
+      opacity: 0.6;
+    }
+  }
+}
+
 .page-header__logo {
   display: flex;
   align-items: center;
@@ -13,7 +25,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-top: 19px;
+    padding-top: 23px;
   }
 
   .page-header__logo {
@@ -43,19 +55,9 @@
       }
     }
 
-    &:not(.page-header--index-page) .page-header__logo {
-      &:hover {
-        opacity: 0.8;
-      }
-
-      &:active {
-        opacity: 0.6;
-      }
-    }
-
-    &--index-page .main-nav__link--active {
-      border-color: #ffffff;
-    }
+    // &--index-page .main-nav__link--active {
+    //   border-color: #ffffff;
+    // }
   }
 
   .page-header__inner {
