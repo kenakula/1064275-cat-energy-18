@@ -13,6 +13,14 @@
   display: flex;
   justify-content: center;
   margin-bottom: 31px;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
 }
 
 .page-footer__socials {
@@ -41,14 +49,6 @@
   .page-footer__logo {
     margin: 0;
     padding: 0;
-
-    &:hover {
-      opacity: 0.8;
-    }
-
-    &:active {
-      opacity: 0.6;
-    }
   }
 
   .page-footer__socials {
