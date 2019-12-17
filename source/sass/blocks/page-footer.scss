@@ -1,4 +1,5 @@
 .page-footer {
+  display: flex;
   padding-top: 39px;
   background-color: $bg-grey;
 }
@@ -35,7 +36,7 @@
 }
 
 .page-footer__copyrights {
-  min-height: 80px;
+  min-height: 75px;
 }
 
 @media (min-width: $tablet) {
@@ -58,20 +59,16 @@
 
   .page-footer__socials {
     border: none;
-    padding: 0 55px;
-  }
-}
-
-@media (min-width: $desktop) {
-  .page-footer {
-    display: flex;
-  }
-
-  .page-footer__wrapper {
-    padding: 0 110px;
+    padding: 0 40px;
   }
 
   .page-footer__copyrights {
     min-height: auto;
+  }
+}
+
+@media (min-width: $desktop) {
+  .page-footer__wrapper {
+    padding: 0 110px;
   }
 }
