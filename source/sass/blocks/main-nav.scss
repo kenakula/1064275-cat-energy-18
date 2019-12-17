@@ -1,10 +1,9 @@
 .main-nav {
   margin-left: calc(-100vw / 2 + 280px / 2);
   margin-right: calc(-100vw / 2 + 280px / 2);
-  // //блок во всю ширину родителя
+  //блок во всю ширину родителя
   position: relative;
   font-family: $font-medium;
-  font-weight: 600;
   font-size: 20px;
   line-height: 20px;
 
@@ -17,9 +16,8 @@
 .main-nav__list {
   display: flex;
   flex-direction: column;
-  margin: 0;
-  padding: 0;
-  list-style: none;
+
+  @include list-reset;
 }
 
 .main-nav__toggle {
@@ -71,11 +69,12 @@
 .main-nav__item {
   display: flex;
   justify-content: center;
+  padding: 13px 0;
   border-top: 1px solid $border-color;
 }
 
 .main-nav__link {
-  padding: 23px 0;
+  padding: 10px 0;
   text-transform: uppercase;
   color: $black;
   text-decoration: none;
@@ -86,7 +85,6 @@
     margin: 0;
     min-width: 440px;
     font-family: $font-regular;
-    font-weight: normal;
     font-size: 18px;
     line-height: 25px;
 

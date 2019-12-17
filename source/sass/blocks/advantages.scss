@@ -24,13 +24,13 @@
   padding-left: 80px;
 
   &::before {
+    content: "";
     position: absolute;
     top: -2px;
     left: 0;
     display: block;
     width: 60px;
     height: 60px;
-    content: "";
     background-color: $green;
     background-repeat: no-repeat;
     background-position: center center;
