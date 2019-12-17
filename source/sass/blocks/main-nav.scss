@@ -1,12 +1,17 @@
 .main-nav {
   margin-left: calc(-100vw / 2 + 280px / 2);
   margin-right: calc(-100vw / 2 + 280px / 2);
-  //блок во всю ширину родителя
+  // //блок во всю ширину родителя
   position: relative;
   font-family: $font-medium;
   font-weight: 600;
   font-size: 20px;
   line-height: 20px;
+
+  &--opened .main-nav__toggle,
+  &--closed .main-nav__toggle {
+    display: block;
+  }
 }
 
 .main-nav__list {
@@ -18,9 +23,10 @@
 }
 
 .main-nav__toggle {
+  display: none;
   position: absolute;
   top: -40px;
-  right: 20px;
+  right: calc(50vw - 160px + 20px);
   width: 25px;
   height: 19px;
   border: none;
@@ -83,6 +89,10 @@
     font-weight: normal;
     font-size: 18px;
     line-height: 25px;
+
+    .main-nav__toggle {
+      display: none;
+    }
   }
 
   .main-nav__list {
@@ -101,10 +111,6 @@
       border-bottom: 2px solid $green;
     }
   }
-
-  .main-nav__toggle {
-    display: none;
-  }
 }
 
 @media (min-width: $desktop) {
@@ -115,10 +121,6 @@
 
   .main-nav__link {
     padding: 7px 0;
-
-    // &--active {
-    //   border-bottom: 2px solid $green;
-    // }
 
     &--index-page {
       color: #ffffff;

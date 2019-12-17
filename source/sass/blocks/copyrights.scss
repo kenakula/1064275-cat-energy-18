@@ -14,9 +14,14 @@
   &:hover {
     color: $green;
   }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .copyrights__logo {
+  position: relative;
   width: 42px;
   height: 46px;
   margin-right: -7px;
@@ -29,6 +34,14 @@
     width: 100%;
     height: 100%;
     fill: $dark-grey;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  &::before {
+    @include ie-active-fix;
   }
 }
 

@@ -10,6 +10,7 @@
 }
 
 .page-footer__logo {
+  position: relative;
   display: flex;
   justify-content: center;
   margin-bottom: 31px;
@@ -20,6 +21,10 @@
 
   &:active {
     opacity: 0.6;
+  }
+
+  &::before {
+    @include ie-active-fix;
   }
 }
 
@@ -58,7 +63,15 @@
 }
 
 @media (min-width: $desktop) {
+  .page-footer {
+    display: flex;
+  }
+
   .page-footer__wrapper {
     padding: 0 110px;
+  }
+
+  .page-footer__copyrights {
+    min-height: auto;
   }
 }

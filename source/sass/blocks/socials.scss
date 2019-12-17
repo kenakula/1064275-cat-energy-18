@@ -17,12 +17,18 @@
 }
 
 .socials__link {
+  position: relative;
+  
   &:hover .socials__icon {
     fill: $green;
   }
 
   &:active {
     opacity: 0.3;
+  }
+
+  &::before {
+    @include ie-active-fix;
   }
 }
 
