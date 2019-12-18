@@ -7,6 +7,14 @@
   border-radius: 7px;
   background: $green;
   cursor: pointer;
+
+  &--before {
+    left: 4px;
+  }
+
+  &--after {
+    right: 4px;
+  }
 }
 
 @media (min-width: $tablet) {

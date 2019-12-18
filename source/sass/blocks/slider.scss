@@ -36,6 +36,16 @@
   background-color: #ffffff;
 }
 
+.slider__button {
+  &:hover {
+    background: none;
+  }
+
+  &:active {
+    color: inherit;
+  }
+}
+
 @media (min-width: $tablet) {
   .slider {
     display: flex;
