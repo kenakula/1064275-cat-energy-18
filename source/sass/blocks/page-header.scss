@@ -10,10 +10,19 @@
   }
 }
 
+.page-header__inner {
+  display: flex;
+  flex-direction: column;
+}
+
 .page-header__logo {
   display: flex;
   align-items: center;
   min-height: 65px;
+
+  img {
+    height: auto;
+  }
 }
 
 @media (min-width: $tablet) {
@@ -23,6 +32,7 @@
 
   .page-header__inner {
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
     align-items: center;
     padding-top: 23px;
@@ -54,19 +64,10 @@
         background-image: url("../img/index-background-desktop@2x.jpg");
       }
     }
-
-    // &--index-page .main-nav__link--active {
-    //   border-color: #ffffff;
-    // }
   }
 
   .page-header__inner {
     padding-top: 55px;
-  }
-
-  .page-header__wrapper {
-    padding: 0 110px;
-    padding-top: 50px;
   }
 
   .page-header__logo {

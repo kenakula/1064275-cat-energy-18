@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <title>HTML Academy: Кэт энерджи</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="js/picturefill.min.js"></script>
     <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body>
@@ -19,7 +20,7 @@
             <img class="page-header__image" src="img/logo-mobile.svg" alt="Логотип Кэт энерджи" width="191" height="39">
           </picture>
         </a>
-        <nav class="main-nav main-nav--opened">
+        <nav class="main-nav">
           <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
           <ul class="main-nav__list">
             <li class="main-nav__item">
@@ -78,7 +79,7 @@
             </fieldset>
           </div>
           <div class="form__field form__field--contacts">
-            <legend class="form__legend form__legend--contacts">Контактные данные (владельца кота)</legend>
+            <h3 class="form__legend form__legend--contacts">Контактные данные (владельца кота)</h3>
             <div class="form__inner-wrap form__inner-wrap--contacts">
               <div class="form__wrapper">
                 <label for="email" class="form__label form__label--contacts form__label--email">E-mail:*</label>
@@ -95,7 +96,7 @@
             <textarea class="form__input form__input--comment" name="user-comment" id="user-comment" placeholder="Расскажите обо всех повадках кота"></textarea>
           </fieldset>
           <div class="form__field form__field--additionals">
-            <legend class="form__legend form__legend--additionals">Дополнительно</legend>
+            <h3 class="form__legend form__legend--additionals">Дополнительно</h3>
             <div class="form__inner-wrap form__inner-wrap--additionals">
               <div class="form__wrapper form__wrapper--additionals">
                 <input class="form__input form__input--checkbox" name="sweetener" value="sweetener" type="checkbox" id="sweetener" checked="">

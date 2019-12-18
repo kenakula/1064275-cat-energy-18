@@ -31,11 +31,11 @@
 
   dl {
     position: relative;
-    display: flex;
+    display: block;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 0 15px;
+    padding: 12px 15px 0;
     width: 124px;
     height: 56px;
     font-size: 12px;
@@ -45,6 +45,7 @@
   }
 
   dt {
+    margin-bottom: 10px;
     font-size: 24px;
     line-height: 24px;
     color: $black;
@@ -53,9 +54,6 @@
   }
 
   dd {
-    position: absolute;
-    bottom: -17px;
-    display: block;
     margin: 0;
     padding: 0 15px;
     width: 87px;
@@ -122,6 +120,7 @@
 
     dl {
       margin-right: 42px;
+      padding-top: 16px;
       width: 162px;
       height: 72px;
     }
@@ -168,7 +167,6 @@
   .example__inner {
     display: flex;
     justify-content: space-between;
-    margin: 0 auto;
     padding: 0 110px;
     width: 1440px;
   }

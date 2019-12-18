@@ -48,6 +48,14 @@
   line-height: 20px;
   color: $dark-grey;
   background-color: $bg-grey;
+
+  &:hover {
+    background-color: #ebebeb;
+  }
+
+  &:active {
+    color: rgba($color: $dark-grey, $alpha: 0.3);
+  }
 }
 
 @media (min-width: $tablet) {
@@ -85,15 +93,5 @@
 @media (min-width: $desktop) {
   .show-all__text {
     width: 170px;
-  }
-
-  .show-all__button {
-    &:hover {
-      background-color: #ebebeb;
-    }
-
-    &:active {
-      color: rgba($color: $dark-grey, $alpha: 0.3);
-    }
   }
 }

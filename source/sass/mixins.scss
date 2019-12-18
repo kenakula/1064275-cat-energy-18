@@ -19,3 +19,13 @@
   margin-left: calc(-100vw / 2 + 280px / 2);
   margin-right: calc(-100vw / 2 + 280px / 2);
 }
+
+@mixin ie-active-fix {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
