@@ -41,15 +41,7 @@
   .contacts__wrapper {
     display: flex;
     padding: 60px 70px;
-
-    &--catalog-page {
-      padding-top: 65px;
-    }
-
-    &--form-page {
-      margin-top: 0;
-      padding-top: 65px;
-    }
+    padding-top: 65px;
   }
 
   .contacts__slogan {

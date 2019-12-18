@@ -1,16 +1,32 @@
 .show-all {
   position: relative;
-  align-items: center;
   min-height: 210px;
   padding: 79px 20px 23px;
-  border-bottom: 1px solid $border-color;
+
+  &::before {
+    top: -79px;
+  }
+
+  &::after {
+    @include border {
+      bottom: -23px;
+    }
+  }
+}
+
+.show-all__wrapper {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  align-items: center;
+  width: 100%;
 
   &::before,
   &::after {
+    content: "";
     position: absolute;
     left: 50%;
-    top: 40px;
-    content: "";
+    top: -39px;
     margin-left: -15px;
     width: 30px;
     height: 2px;
@@ -68,7 +84,14 @@
 
     &::before,
     &::after {
-      top: 83px;
+      display: none;
+    }
+  }
+
+  .show-all__wrapper {
+    &::before,
+    &::after {
+      top: -83px;
       width: 59px;
       margin-left: -28px;
     }

@@ -29,3 +29,14 @@
   left: 0;
   right: 0;
 }
+
+@mixin border {
+  content: "";
+  display: block;
+  position: relative;
+  left: -450px;
+  width: 1000px;
+  height: 1px;
+  background-color: $border-color;
+  @content;
+}

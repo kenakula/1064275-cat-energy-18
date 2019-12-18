@@ -5,7 +5,6 @@
   margin: 0;
   padding: 0;
   border: none;
-  border-bottom: 1px solid $border-color;
   font-size: 16px;
   color: $black-alt;
 
@@ -16,25 +15,34 @@
   &--target {
     padding-top: 16px;
     padding-bottom: 14px;
+
+    &::before {
+      @include border {
+        top: -16px;
+      }
+    }
+
+    &::after {
+      @include border {
+        bottom: -14px;
+      }
+    }
   }
 
   &--contacts {
     @include form-line(42px);
     padding-top: 28px;
     margin-bottom: 14px;
-    border: none;
   }
 
   &--comment {
     @include form-line(13px);
-    border: none;
   }
 
   &--additionals {
     @include form-line(42px);
     margin-bottom: 26px;
     padding-top: 28px;
-    border: none;
   }
 }
 
@@ -319,6 +327,11 @@
       padding: 33px 25px;
       margin-bottom: 76px;
       border: 1px solid $border-color-alt;
+
+      &::before,
+      &::after {
+        display: none;
+      }
     }
 
     &--contacts {
