@@ -150,6 +150,10 @@
 
   .example__slider {
     background-color: $bg-grey;
+
+    &--slim {
+      background-color: #eaeaea;
+    }
   }
 }
 
@@ -162,6 +166,10 @@
     padding-bottom: 73px;
     border: none;
     background-color: $bg-grey;
+
+    &--slim {
+      background-color: #eaeaea;
+    }
   }
 
   .example__inner {
@@ -200,6 +208,12 @@
     dd {
       background-color: $bg-grey;
     }
+
+    &--slim {
+      dd {
+        background-color: #eaeaea;
+      }
+    }
   }
 
   .example__price {
@@ -209,4 +223,12 @@
     margin: 0;
     text-align: left;
   }
+}
+
+.slim-active {
+  background-color: #eaeaea;
+}
+
+.fat-active {
+  background-origin: $bg-grey;
 }
