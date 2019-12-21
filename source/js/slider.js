@@ -16,7 +16,7 @@ window.addEventListener('resize', function() {
     if (!slimCat.classList.contains('slider__item--hidden')) {
       //изменяет фон при увеличении размера окна и активном худом котике
       section.classList.add('example--slim')
-      //изменяет фон елементам списка определений
+      //изменяет фон элементам списка определений
       for (i = 0; i < stats.length; i++) {
         stats[i].classList.add('example__stats--slim')
       }

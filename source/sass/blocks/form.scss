@@ -167,6 +167,10 @@
   &--checkbox {
     display: none;
   }
+
+  &:invalid {
+    border-color: #ff8282;
+  }
 }
 
 .form__input--radio:checked + label::after {

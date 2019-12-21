@@ -40,8 +40,12 @@
 @media (min-width: $tablet) {
   .contacts__wrapper {
     display: flex;
-    padding: 60px 70px;
-    padding-top: 65px;
+    padding: 60px 70px 61px;
+
+    &--catalog-page,
+    &--form-page {
+      padding: 64px 70px 62px;
+    }
   }
 
   .contacts__slogan {

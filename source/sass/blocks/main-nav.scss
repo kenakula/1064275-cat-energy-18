@@ -119,6 +119,14 @@
     &--active {
       border-bottom: 2px solid $green;
     }
+
+    &:not(.main-nav__link--active):hover {
+      opacity: 0.6;
+    }
+
+    &:not(.main-nav__link--active):active {
+      opacity: 0.3;
+    }
   }
 }
 
