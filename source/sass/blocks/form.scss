@@ -36,7 +36,7 @@
   }
 
   &--comment {
-    @include form-line(13px);
+    @include form-line(14px);
   }
 
   &--additionals {
@@ -79,6 +79,7 @@
   &--comment {
     margin-bottom: 35px;
     padding-right: 22px;
+    max-width: 142px;
     z-index: 1;
   }
 
@@ -168,7 +169,7 @@
     display: none;
   }
 
-  &:invalid {
+  &:invalid:focus {
     border-color: #ff8282;
   }
 }
@@ -393,6 +394,7 @@
       padding-right: 38px;
       margin-left: -40px;
       margin-bottom: 76px;
+      max-width: 259px;
     }
 
     &--additionals {
@@ -432,7 +434,6 @@
 
     &::-moz-placeholder {
       font-size: 20px;
-      line-height: 20px;
     }
 
     &:-ms-input-placeholder {
