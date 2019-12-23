@@ -1,6 +1,7 @@
 .page-header {
   &:not(.page-header--index-page) .page-header__logo {
     position: relative;
+
     &:hover,
     &:focus {
       opacity: 0.8;
