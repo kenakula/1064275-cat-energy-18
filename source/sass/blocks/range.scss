@@ -44,7 +44,8 @@
 
 @media (min-width: $desktop) {
   .range__button {
-    &:hover {
+    &:hover,
+    &:focus {
       box-shadow: 0 2px 5px #817f7f;
     }
   }

@@ -65,7 +65,8 @@
   color: $dark-grey;
   background-color: $bg-grey;
 
-  &:hover {
+  &:hover,
+  &:focus {
     background-color: #ebebeb;
   }
 

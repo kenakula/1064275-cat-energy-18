@@ -207,7 +207,8 @@
   }
 
   .series__link {
-    &:hover {
+    &:hover,
+    &:focus {
       &::after {
         width: 34px;
         right: -6px;

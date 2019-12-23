@@ -16,7 +16,8 @@
   justify-content: center;
   margin-bottom: 31px;
 
-  &:hover {
+  &:hover,
+  &:focus {
     opacity: 0.8;
   }
 

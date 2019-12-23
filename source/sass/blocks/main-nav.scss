@@ -120,7 +120,8 @@
       border-bottom: 2px solid $green;
     }
 
-    &:not(.main-nav__link--active):hover {
+    &:not(.main-nav__link--active):hover,
+    &:not(.main-nav__link--active):focus {
       opacity: 0.6;
     }
 
