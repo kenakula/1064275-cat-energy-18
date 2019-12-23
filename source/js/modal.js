@@ -1,14 +1,29 @@
 var modal = document.querySelector('.modal');
-var orderBtn = document.querySelectorAll('.products__button');
+var orderGoodsBtn = document.querySelectorAll('.products__button');
+var orderAdditionalsBtn = document.querySelectorAll('.additional-goods__link');
 var resumeShopping = document.querySelector('.modal__button');
 
-for (i = 0; i < orderBtn.length; i++) {
-  orderBtn[i].addEventListener('click', function(evt) {
+//для ссылок основных товаров каталога
+for (i = 0; i < orderGoodsBtn.length; i++) {
+  orderGoodsBtn[i].addEventListener('click', function(evt) {
     evt.preventDefault();
     modal.classList.add('modal--show');
 
     var coords = event.target.getBoundingClientRect();
-    console.log(coords)
+    console.log(coords);
+
+    modal.style.top = coords.top + pageYOffset + 'px';
+  })
+}
+
+//для ссылок дополнительных товаров каталога
+for (i = 0; i < orderAdditionalsBtn.length; i++) {
+  orderAdditionalsBtn[i].addEventListener('click', function(evt) {
+    evt.preventDefault();
+    modal.classList.add('modal--show');
+
+    var coords = event.target.getBoundingClientRect();
+    console.log(coords);
 
     modal.style.top = coords.top + pageYOffset + 'px';
   })

@@ -142,6 +142,10 @@
 
   &--contacts {
     margin-left: 10px;
+
+    &:focus + .form__icon {
+      fill: $green;
+    }
   }
 
   &--comment {

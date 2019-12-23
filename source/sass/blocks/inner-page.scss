@@ -4,9 +4,11 @@
 
 .inner-page__title {
   margin: 0;
+  font-weight: 400;
   font-size: 36px;
   line-height: 60px;
   color: $black;
+  letter-spacing: -1px; // в Edge не влезает в одну строку
 }
 
 @media (min-width: $tablet) {
