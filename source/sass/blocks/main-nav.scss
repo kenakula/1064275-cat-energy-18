@@ -81,9 +81,11 @@
 
 .main-nav__link {
   padding: 10px 0;
+  max-width: 280px;
   text-transform: uppercase;
   color: $black;
   text-decoration: none;
+  text-align: center;
 }
 
 .hidden {
@@ -110,6 +112,7 @@
   }
 
   .main-nav__item {
+    align-items: center;
     border: none;
   }
 
