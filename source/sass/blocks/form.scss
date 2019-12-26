@@ -40,7 +40,7 @@
 
   &--additionals {
     @include form-line(42px);
-    margin-bottom: 26px;
+    margin-bottom: 41px;
     padding-top: 28px;
   }
 }
@@ -84,7 +84,7 @@
   }
 
   &--additionals {
-    margin-bottom: 28px;
+    margin-bottom: 41px;
     padding-right: 22px;
     max-width: 164px;
     z-index: 1;
@@ -238,7 +238,12 @@
 
   &--additionals {
     position: relative;
+    margin-bottom: 24px;
     padding-left: 45px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
 
     &::before {
       content: "";
@@ -384,6 +389,10 @@
     }
 
     &--additionals {
+      flex-direction: row;
+      flex-wrap: wrap;
+      margin-bottom: 64px;
+
       &::before {
         top: 23px;
         width: 1400px;
@@ -424,9 +433,15 @@
     &--additionals {
       padding-left: 40px;
       margin-left: -40px;
-      margin-bottom: 55px;
+      margin-bottom: 14px;
       max-width: 292px;
     }
+  }
+
+  .form__inner {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
   }
 
   .form__wrapper {
@@ -520,7 +535,9 @@
 
     &--additionals {
       padding-left: 58px;
-      max-width: 320px;
+      width: 286px;
+      margin: 0;
+      margin-top: 53px;
 
       &::before {
         top: -9px;
@@ -598,7 +615,7 @@
     }
 
     &--additionals {
-      margin-bottom: 48px;
+      margin-bottom: 72px;
 
       &::before {
         width: 4000px;
@@ -664,6 +681,11 @@
 
     &--tel::after {
       right: -469px;
+    }
+
+    &--additionals {
+      margin-top: 0;
+      width: 246px;
     }
   }
 

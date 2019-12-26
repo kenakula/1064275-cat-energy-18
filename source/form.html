@@ -97,27 +97,22 @@
             <h3 class="form__legend form__legend--comment">Комментарий</h3>
             <textarea class="form__input form__input--comment" name="user-comment" id="user-comment" placeholder="Расскажите обо всех повадках кота"></textarea>
           </div>
-          <div class="form__field form__field--additionals">
+          <fieldset class="form__field form__field--additionals">
             <h3 class="form__legend form__legend--additionals">Дополнительно</h3>
-            <div class="form__inner-wrap form__inner-wrap--additionals">
-              <div class="form__wrapper form__wrapper--additionals">
-                <input class="visually-hidden form__input form__input--checkbox" name="sweetener" value="sweetener" type="checkbox" id="sweetener" checked>
-                <label for="sweetener" class="form__label form__label--additionals additionals__label">Сахарозаменитель</label>
-              </div>
-              <div class="form__wrapper form__wrapper--additionals">
-                <input class="visually-hidden form__input form__input--checkbox" name="water" value="water" type="checkbox" id="water">
-                <label for="water" class="form__label form__label--additionals additionals__label">Питьевая вода</label>
-              </div>
-              <div class="form__wrapper form__wrapper--additionals">
-                <input class="visually-hidden form__input form__input--checkbox" name="milk" value="milk" type="checkbox" id="milk">
-                <label for="milk" class="form__label form__label--additionals additionals__label">Молоко</label>
-              </div>
-              <div class="form__wrapper form__wrapper--additionals">
-                <input class="visually-hidden form__input form__input--checkbox" name="vitamins" value="vitamins" type="checkbox" id="vitamins">
-                <label for="vitamins" class="form__label form__label--additionals additionals__label">Витамины</label>
-              </div>
+            <div class="form__inner">
+              <input class="visually-hidden form__input form__input--checkbox" name="sweetener" value="sweetener" type="checkbox" id="sweetener" checked>
+              <label for="sweetener" class="form__label form__label--additionals">Сахарозаменитель</label>
+
+              <input class="visually-hidden form__input form__input--checkbox" name="water" value="water" type="checkbox" id="water">
+              <label for="water" class="form__label form__label--additionals">Питьевая вода</label>
+
+              <input class="visually-hidden form__input form__input--checkbox" name="milk" value="milk" type="checkbox" id="milk">
+              <label for="milk" class="form__label form__label--additionals">Молоко</label>
+
+              <input class="visually-hidden form__input form__input--checkbox" name="vitamins" value="vitamins" type="checkbox" id="vitamins">
+              <label for="vitamins" class="form__label form__label--additionals">Витамины</label>
             </div>
-          </div>
+          </fieldset>
           <button class="form__button button" type="submit">Отправить заявку</button>
           <small class="form__caption"><sup>*</sup> — Обязательные поля</small>
         </form>
