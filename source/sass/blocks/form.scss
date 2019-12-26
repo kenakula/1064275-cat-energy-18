@@ -173,6 +173,10 @@
   &--checkbox {
     display: none;
   }
+
+  &--radio:focus + label {
+    outline: rgb(59, 153, 252) auto 5px;
+  }
 }
 
 .form__input--radio:checked + label::after {
@@ -187,6 +191,7 @@
   &--target {
     position: relative;
     padding-left: 45px;
+    max-width: 280px;
 
     &::before {
       content: "";
@@ -495,6 +500,7 @@
   .form__label {
     &--target {
       padding-left: 62px;
+      max-width: 320px;
 
       &::before {
         top: -10px;
@@ -513,6 +519,7 @@
 
     &--additionals {
       padding-left: 58px;
+      max-width: 320px;
 
       &::before {
         top: -9px;
