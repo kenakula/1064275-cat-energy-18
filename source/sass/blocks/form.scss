@@ -615,7 +615,7 @@
     }
 
     &--additionals {
-      margin-bottom: 72px;
+      margin-bottom: 40px;
 
       &::before {
         width: 4000px;
@@ -685,7 +685,12 @@
 
     &--additionals {
       margin-top: 0;
+      margin-bottom: 32px;
       width: 246px;
+
+      &:last-child {
+        margin-bottom: 32px;
+      }
     }
   }
 
