@@ -13,18 +13,17 @@
   }
 
   &--target {
-    padding-top: 16px;
-    padding-bottom: 14px;
+    padding: 26px 0;
 
     &::before {
       @include border {
-        top: -16px;
+        top: -26px;
       }
     }
 
     &::after {
       @include border {
-        bottom: -14px;
+        bottom: -26px;
       }
     }
   }
@@ -169,12 +168,8 @@
     }
   }
 
-  &--radio,
-  &--checkbox {
-    display: none;
-  }
-
-  &--radio:focus + label {
+  &--radio:focus + label::before,
+  &--checkbox:focus + label::before {
     outline: rgb(59, 153, 252) auto 5px;
   }
 }
@@ -191,7 +186,12 @@
   &--target {
     position: relative;
     padding-left: 45px;
+    margin-bottom: 25px;
     max-width: 280px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
 
     &::before {
       content: "";
@@ -499,6 +499,7 @@
 
   .form__label {
     &--target {
+      margin-bottom: 33px;
       padding-left: 62px;
       max-width: 320px;
 
