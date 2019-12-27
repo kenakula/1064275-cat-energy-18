@@ -1,11 +1,18 @@
 .page-header {
   &:not(.page-header--index-page) .page-header__logo {
-    &:hover {
+    position: relative;
+
+    &:hover,
+    &:focus {
       opacity: 0.8;
     }
 
     &:active {
       opacity: 0.6;
+    }
+
+    &::before {
+      @include ie-active-fix;
     }
   }
 }
@@ -13,12 +20,14 @@
 .page-header__inner {
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
 }
 
 .page-header__logo {
   display: flex;
   align-items: center;
   min-height: 65px;
+  max-width: fit-content;
 
   img {
     height: auto;

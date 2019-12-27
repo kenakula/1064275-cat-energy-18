@@ -114,7 +114,7 @@
     margin: 0;
     margin-bottom: 87px;
     width: 324px;
-    height: 230px;
+    min-height: 230px;
 
     &::before {
       width: 80px;

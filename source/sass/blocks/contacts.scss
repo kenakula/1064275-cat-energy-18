@@ -18,6 +18,8 @@
 
 .contacts__slogan {
   margin: 0;
+  padding-right: 10px;
+  max-width: 180px;
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
@@ -40,20 +42,16 @@
 @media (min-width: $tablet) {
   .contacts__wrapper {
     display: flex;
-    padding: 60px 70px;
+    padding: 60px 70px 61px;
 
-    &--catalog-page {
-      padding-top: 65px;
-    }
-
+    &--catalog-page,
     &--form-page {
-      margin-top: 0;
-      padding-top: 65px;
+      padding: 64px 70px 62px;
     }
   }
 
   .contacts__slogan {
-    width: 155px;
+    max-width: 170px;
     font-size: 20px;
     line-height: 25px;
   }

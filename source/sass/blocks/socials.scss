@@ -19,7 +19,8 @@
 .socials__link {
   position: relative;
 
-  &:hover .socials__icon {
+  &:hover .socials__icon,
+  &:focus .socials__icon {
     fill: $green;
   }
 

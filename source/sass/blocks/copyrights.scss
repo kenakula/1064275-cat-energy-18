@@ -5,13 +5,16 @@
 }
 
 .copyrights__link {
+  max-width: 170px;
+  padding: 10px 0;
   color: $dark-grey;
   font-size: 16px;
   line-height: 16px;
   font-family: $font-alt;
   text-decoration: none;
 
-  &:hover {
+  &:hover,
+  &:focus {
     color: $green;
   }
 
@@ -26,7 +29,8 @@
   height: 46px;
   margin-right: -7px;
 
-  &:hover .copyrights__image {
+  &:hover .copyrights__image,
+  &:focus .copyrights__image {
     fill: $green;
   }
 
@@ -46,7 +50,7 @@
 }
 
 @media (min-width: $tablet) {
-  .copyrights__logo {
-    margin-left: 15px;
+  .copyrights__link {
+    margin-right: 15px;
   }
 }

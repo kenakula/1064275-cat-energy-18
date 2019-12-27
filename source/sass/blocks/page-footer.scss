@@ -16,7 +16,8 @@
   justify-content: center;
   margin-bottom: 31px;
 
-  &:hover {
+  &:hover,
+  &:focus {
     opacity: 0.8;
   }
 
@@ -30,6 +31,7 @@
 }
 
 .page-footer__socials {
+  position: relative;
   padding: 0 60px;
   border-top: 1px solid $border-color-alt;
   border-bottom: 1px solid $border-color-alt;
