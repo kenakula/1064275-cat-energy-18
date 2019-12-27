@@ -170,7 +170,7 @@
 
   &--radio:focus + label::before,
   &--checkbox:focus + label::before {
-    outline: rgb(59, 153, 252) auto 5px;
+    box-shadow: 0 0 5px rgb(59, 153, 252);
   }
 }
 
@@ -615,6 +615,7 @@
     }
 
     &--additionals {
+      display: block;
       margin-bottom: 40px;
 
       &::before {

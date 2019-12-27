@@ -90,7 +90,8 @@
   display: flex;
   flex-direction: column-reverse;
   align-items: center;
-  min-height: 289px; // из-за IE
+  min-height: 289px;
+  height: 288px; // фикс IE
   background-color: $green;
   background-image: url("../img/gift-photo-mobile@1x.jpg");
   background-repeat: no-repeat;
@@ -186,6 +187,7 @@
     margin-top: 0;
     flex-direction: row;
     min-height: 200px;
+    height: 199px; // IE fix
     background-image: url("../../img/gift-photo-tablet@1x.jpg");
 
     @media (min-resolution: $retina) {
