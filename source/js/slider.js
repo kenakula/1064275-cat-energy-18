@@ -12,7 +12,7 @@ var section = document.querySelector('.example');
 var stats = document.querySelectorAll('.example__stats');
 
 window.addEventListener('resize', function() {
-  if (window.matchMedia('(min-width: 1440px)').matches) {
+  if (window.matchMedia('(min-width: 1300px)').matches) {
     if (!slimCat.classList.contains('slider__item--hidden')) {
       //изменяет фон при увеличении размера окна и активном худом котике
       section.classList.add('example--slim')
@@ -36,7 +36,7 @@ afterBtn.addEventListener('click', function() {
     slider.classList.add('example__slider--slim')
   }
   //изменяет фон на десктопах
-  if (window.matchMedia('(min-width: 1440px)').matches) {
+  if (window.matchMedia('(min-width: 1300px)').matches) {
     section.classList.add('example--slim')
     //изменяет фон елементам списка определений
     for (i = 0; i < stats.length; i++) {
@@ -56,7 +56,7 @@ beforeBtn.addEventListener('click', function() {
     slider.classList.remove('example__slider--slim')
   }
   //изменяет фон на десктопах
-  if (window.matchMedia('(min-width: 1440px)').matches) {
+  if (window.matchMedia('(min-width: 1300px)').matches) {
     slider.classList.remove('example__slider--slim')
     section.classList.remove('example--slim')
     //изменяет фон елементам списка определений
