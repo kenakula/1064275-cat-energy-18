@@ -93,7 +93,7 @@
     margin: 0;
     padding: 40px 37px;
     width: 324px;
-    max-height: 431px;
+    min-height: 431px;
     border: none;
     background-color: $bg-grey;
 
@@ -167,7 +167,7 @@
 
 @media (min-width: $desktop) {
   .products {
-    padding: 0 110px;
+    padding: 0 40px;
     padding-top: 22px;
     margin-bottom: 74px;
   }

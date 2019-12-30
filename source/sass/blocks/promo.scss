@@ -96,12 +96,16 @@
 
 @media (min-width: $desktop) {
   .promo {
+    margin: 0 auto;
     padding-top: 101px;
-    padding-left: 79px;
+    padding-left: 78px;
     min-height: 655px;
+    width: 1300px;
     background-image: url("../img/index-can-desktop@1x.png");
     background-size: 552px;
     background-position: top 21px right 258px;
+    
+    
 
     @media (min-resolution: $retina) {
       background-image: url("../img/index-can-desktop@2x.png");
