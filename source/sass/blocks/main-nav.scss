@@ -11,6 +11,7 @@
 .main-nav__list {
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
 
   @include list-reset;
 }
@@ -138,6 +139,10 @@
   .main-nav {
     min-width: 480px;
     font-size: 20px;
+  }
+
+  .main-nav__list {
+    max-width: 550px;
   }
 
   .main-nav__link {
