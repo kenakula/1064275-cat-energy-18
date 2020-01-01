@@ -138,8 +138,8 @@
 
   .slider__item {
     &--slim {
-      margin-right: $margin-neg;
-      width: calc(325px + #{$margin-pos});
+      margin-right: $margin;
+      width: $slide-width;
     }
   }
 
