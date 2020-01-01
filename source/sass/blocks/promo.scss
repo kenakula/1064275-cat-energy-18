@@ -42,14 +42,15 @@
 
 .promo__button {
   align-self: stretch;
-  width: 100%;
+  margin: 0 auto;
+  width: 280px;
   background-color: $green;
   color: #ffffff;
 }
 
 @media (min-width: $tablet) {
   .promo {
-    padding-left: 88px;
+    padding-left: 118px;
     min-height: 837px;
     background-image: url("../img/index-can-tablet@1x.jpg");
     // background-color: transparent;
@@ -96,16 +97,24 @@
 
 @media (min-width: $desktop) {
   .promo {
+    margin: 0 auto;
     padding-top: 101px;
-    padding-left: 79px;
+    padding-left: 78px;
     min-height: 655px;
+    width: 1300px;
     background-image: url("../img/index-can-desktop@1x.png");
     background-size: 552px;
-    background-position: top 21px right 328px;
+    background-position: top 21px right 258px;
 
     @media (min-resolution: $retina) {
       background-image: url("../img/index-can-desktop@2x.png");
     }
+  }
+
+  .promo__inner {
+    margin: 0;
+    padding: 0;
+    padding-left: 41px;
   }
 
   .promo__title {

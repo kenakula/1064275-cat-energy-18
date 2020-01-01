@@ -9,6 +9,7 @@
   padding: 0;
   font-size: 36px;
   line-height: 60px;
+  font-weight: 400;
 }
 
 .advantages__list {
@@ -149,11 +150,12 @@
 
 @media (min-width: $desktop) {
   .advantages {
-    padding: 73px 30px 128px 110px;
+    padding-top: 74px;
+    padding-bottom: 126px;
   }
 
   .advantages__item {
-    width: 325px;
+    width: 244px;
   }
 
   .advantages__title {

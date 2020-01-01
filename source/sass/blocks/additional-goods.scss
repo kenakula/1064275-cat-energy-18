@@ -21,6 +21,7 @@
   padding-right: 22px;
   font-size: 24px;
   line-height: 24px;
+  font-weight: 400;
   color: $black;
   background-color: #ffffff;
 }
@@ -54,6 +55,7 @@
   margin-bottom: 11px;
   font-size: 16px;
   line-height: 16px;
+  font-weight: 400;
   color: $black-alt;
   text-transform: uppercase;
 }
@@ -199,8 +201,8 @@
 
 @media (min-width: $desktop) {
   .additional-goods {
-    margin-bottom: 86px;
-    padding: 0 110px;
+    margin-bottom: 82px;
+    padding: 0 40px;
 
     &::before {
       top: 23px;
@@ -210,7 +212,7 @@
 
   .additional-goods__title {
     margin-left: -41px;
-    margin-bottom: 81px;
+    margin-bottom: 82px;
     padding-left: 40px;
   }
 

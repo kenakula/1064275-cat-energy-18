@@ -85,11 +85,16 @@
     margin: 0;
     padding-top: 66px;
     padding-left: 75px;
+    padding-bottom: 59px;
     width: 570px;
     background: #ffffff;
 
     &--inner-page {
       margin: 0;
+    }
+
+    &--catalog-page {
+      padding-top: 68px;
     }
   }
 
