@@ -15,7 +15,7 @@
   background-image: url("../img/index-background-mobile@1x.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: top center;
+  background-position: center center;
 
   @media (min-resolution: $retina) {
     background-image: url("../img/index-background-mobile@2x.jpg");
@@ -25,6 +25,8 @@
     content: "";
     position: absolute;
     top: 164px;
+    left: 50%;
+    margin-left: -140px;
     width: 280px;
     height: 270px;
     background-image: url("../img/index-can-mobile@1x.png");
@@ -74,13 +76,15 @@
   .promo__inner {
     align-items: flex-start;
     margin-bottom: 0;
-    min-height: unset;
+    padding-bottom: 48px;
+    min-height: auto;
     background-image: none;
     background-color: transparent;
 
     &::after {
       top: 228px;
-      right: 30px;
+      left: -89px;
+      margin: 0;
       width: 709px;
       height: 609px;
       background-image: url("../img/index-can-tablet@1x.jpg");
@@ -103,7 +107,6 @@
 
   .promo__slogan {
     position: relative;
-    margin-bottom: 48px;
     color: $black;
     font-size: 20px;
     line-height: 20px;
@@ -136,7 +139,7 @@
 
     &::after {
       top: -79px;
-      right: 258px;
+      left: 372px;
       width: 550px;
       background-image: url("../img/index-can-desktop@1x.png");
 
