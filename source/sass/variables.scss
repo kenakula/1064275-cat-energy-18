@@ -22,5 +22,5 @@ $desktop: 1300px;
 //resolution
 $retina: 1.5dppx;
 //other
-$margin-neg: calc(-100vw / 2 + 1300px / 2);
-$margin-pos: calc(100vw / 2 - 1300px / 2);
+$margin: calc(-100vw / 2 + 1300px / 2);
+$slide-width: calc(325px + (100vw / 2 - 1300px / 2));

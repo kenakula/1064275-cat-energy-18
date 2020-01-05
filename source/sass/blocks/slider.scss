@@ -11,6 +11,18 @@
   &--slim {
     display: none;
   }
+
+  &--off {
+    display: none;
+  }
+
+  &--on {
+    display: flex;
+  }
+
+  &--full {
+    width: 100%;
+  }
 }
 
 .slider__controls {
@@ -138,8 +150,8 @@
 
   .slider__item {
     &--slim {
-      margin-right: $margin-neg;
-      width: calc(325px + #{$margin-pos});
+      margin-right: $margin;
+      width: $slide-width;
     }
   }
 
