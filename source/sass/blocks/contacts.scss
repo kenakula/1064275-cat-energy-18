@@ -47,11 +47,17 @@
   &::before {
     content: "";
     position: absolute;
-    width: 55px;
-    height: 55px;
+    top: 50%;
+    left: 50%;
+    margin-left: -32px;
+    margin-top: -46px;
+    width: 64px;
+    height: 64px;
+
     background-image: url("../../img/map-pin.png");
     background-repeat: no-repeat;
     background-position: center center;
+    background-size: contain;
   }
 }
 
@@ -89,6 +95,15 @@
   .contacts__map iframe,
   .contacts__container {
     height: 396px;
+  }
+
+  .contacts__container {
+    &::before {
+      width: 124px;
+      height: 124px;
+      margin-left: -62px;
+      margin-top: -62px;
+    }
   }
 }
 
@@ -133,5 +148,16 @@
   .contacts__map iframe,
   .contacts__container {
     height: 400px;
+  }
+
+  .contacts__container {
+    &::before {
+      left: 71.5%;
+      top: 45%;
+      width: 120px;
+      height: 120px;
+      margin-left: -32px;
+      margin-top: -57px;
+    }
   }
 }
