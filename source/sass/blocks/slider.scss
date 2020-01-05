@@ -11,6 +11,18 @@
   &--slim {
     display: none;
   }
+
+  &--off {
+    display: none;
+  }
+
+  &--on {
+    display: flex;
+  }
+
+  &--full {
+    width: 100%;
+  }
 }
 
 .slider__controls {
