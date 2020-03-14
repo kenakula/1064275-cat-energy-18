@@ -118,7 +118,7 @@
           </div>
           <div class="example__slider slider">
             <div class="slider__items-list">
-              <div class="slider__item slider__item--fat">
+              <div class="slider__item slider__item--fat slider__item--active">
                 <div class="slider__image-wrap">
                   <picture>
                     <source type="image/webp" media="(min-width: 1300px)" srcset="img/before-desktop@1x.webp 1x, img/before-desktop@2x.webp 2x">
@@ -146,13 +146,13 @@
               </div>
             </div>
             <div class="slider__controls">
-              <button class="slider__button slider__button--before button" type="button">Было</button>
+              <button class="slider__button slider__button--before button" type="button" data-index="0">Было</button>
 
               <div class="slider__range range">
                 <button class="range__button" type="button"></button>
               </div>
 
-              <button class="slider__button slider__button--after button" type="button">Стало</button>
+              <button class="slider__button slider__button--after button" type="button"  data-index="1">Стало</button>
             </div>
           </div>
         </div>
@@ -230,6 +230,7 @@
         </div>
       </div>
     </footer>
+    <script src="js/debounce.min.js"></script>
     <script src="js/menu.min.js"></script>
     <script src="js/map-fallback.min.js"></script>
     <script src="js/slider.min.js"></script>

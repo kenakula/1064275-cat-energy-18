@@ -17,7 +17,7 @@ var svgstore = require('gulp-svgstore');
 var posthtml = require('gulp-posthtml');
 var include = require('posthtml-include');
 var htmlmin = require('gulp-htmlmin');
-var uglify = require('gulp-uglify');
+var uglify = require('gulp-uglify-es').default;
 
 gulp.task('clean', function() {
   return del('build');

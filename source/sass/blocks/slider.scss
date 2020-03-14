@@ -4,19 +4,11 @@
 }
 
 .slider__item {
-  display: flex;
+  display: none;
   justify-content: center;
   width: 100%;
 
-  &--slim {
-    display: none;
-  }
-
-  &--off {
-    display: none;
-  }
-
-  &--on {
+  &--active {
     display: flex;
   }
 
@@ -90,6 +82,10 @@
     &--slim {
       right: 0;
       background-color: #eaeaea;
+    }
+
+    &--fullwidth {
+      width: 100%;
     }
   }
 

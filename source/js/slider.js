@@ -1,44 +1,60 @@
-var slider = document.querySelector('.slider');
+'use strict';
 
-var fatCat = document.querySelector('.slider__item--fat');
-var slimCat = document.querySelector('.slider__item--slim');
+(function () {
+  const MOBILE_MAX_WIDTH = '(max-width: 767px)';
+  const TABLET_MIN_WIDTH = '(min-width: 768px)';
+  const TABLET_MAX_WIDTH = '(max-width: 1299px)';
+  const FAT_CAT_INDEX = '1';
 
-var beforeBtn = document.querySelector('.slider__button--before');
-var afterBtn = document.querySelector('.slider__button--after');
-var rangeBtn = document.querySelector('.range__button');
+  const slider = document.querySelector('.slider');
+  const sliderImages = slider.querySelectorAll('.slider__item');
+  const fatCatImage = slider.querySelector('.slider__item--fat');
+  const slimCatImage = slider.querySelector('.slider__item--slim');
 
+  const beforeBtn = slider.querySelector('.slider__button--before');
+  const afterBtn = slider.querySelector('.slider__button--after');
+  const rangeBar = slider.querySelector('.range');
+  const rangeBtn = slider.querySelector('.range__button');
 
-//для мобильной версии
-var turnOn = function(slide) {
-  if (!slide.classList.contains('slider__item--off')) {
-    slide.classList.add('slider__item--on')
-  } else {
-    slide.classList.remove('slider__item--off')
-    slide.classList.add('slider__item--on')
+  const toggleRangeBtn = (evt) => {
+    evt.target.dataset.index === FAT_CAT_INDEX
+      ? rangeBtn.classList.add('range__button--after')
+      : rangeBtn.classList.remove('range__button--after');
+  };
+
+  const makeMobileImageActive = (evt) => {
+    const activeElement = slider.querySelector('.slider__item--active');
+
+    if (evt.target.classList.contains('slider__button')) {
+      activeElement.classList.remove('slider__item--active');
+      sliderImages[evt.target.dataset.index].classList.add('slider__item--active');
+      toggleRangeBtn(evt);
+    }
+
+  };
+
+  const makeTabletImageActive = (evt) => {
+    if (evt.target.classList.contains('slider__button')) {
+      sliderImages[evt.target.dataset.index].classList.add('slider__item--fullwidth');
+    }
   }
-};
 
-var turnOff = function(slide) {
-  if (!slide.classList.contains('slider__item--on')) {
-    slide.classList.add('slider__item--off')
-  } else {
-    slide.classList.remove('slider__item--on')
-    slide.classList.add('slider__item--off')
-  }
-};
+  const changeHandler = () => {
+    if (window.matchMedia(MOBILE_MAX_WIDTH).matches) {
+      slider.addEventListener('click', makeMobileImageActive);
+      slider.removeEventListener('click', makeTabletImageActive);
+      console.log('mobile');
+    };
 
-if (window.matchMedia('(max-width: 767px)').matches) {
-  beforeBtn.addEventListener('click', function() {
-    turnOn(fatCat);
-    turnOff(slimCat);
-    rangeBtn.classList.remove('range__button--after');
-  })
+    if (window.matchMedia(TABLET_MAX_WIDTH).matches && window.matchMedia(TABLET_MIN_WIDTH).matches) {
+      slider.removeEventListener('click', makeMobileImageActive);
+      slider.addEventListener('click', makeTabletImageActive);
+      console.log('tablet');
+    }
+  };
 
-  afterBtn.addEventListener('click', function() {
-    turnOn(slimCat);
-    turnOff(fatCat);
-    rangeBtn.classList.add('range__button--after');
-  })
-};
+  changeHandler();
 
-//для планшетной версии
+  window.addEventListener('resize', window.debounce(changeHandler));
+
+})();
