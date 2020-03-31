@@ -1,60 +1,64 @@
 'use strict';
 
 (function () {
-  const MOBILE_MAX_WIDTH = '(max-width: 767px)';
-  const TABLET_MIN_WIDTH = '(min-width: 768px)';
-  const TABLET_MAX_WIDTH = '(max-width: 1299px)';
-  const FAT_CAT_INDEX = '1';
 
-  const slider = document.querySelector('.slider');
-  const sliderImages = slider.querySelectorAll('.slider__item');
-  const fatCatImage = slider.querySelector('.slider__item--fat');
-  const slimCatImage = slider.querySelector('.slider__item--slim');
+  var slider = document.querySelector('.slider');
+  var sliderList = slider.querySelector('.slider__items-list');
+  var sliderItems = sliderList.querySelectorAll('.slider__item');
 
-  const beforeBtn = slider.querySelector('.slider__button--before');
-  const afterBtn = slider.querySelector('.slider__button--after');
-  const rangeBar = slider.querySelector('.range');
-  const rangeBtn = slider.querySelector('.range__button');
+  var controlsContainer = slider.querySelector('.slider__controls');
+  var rangeButton = controlsContainer.querySelector('.range__button');
 
-  const toggleRangeBtn = (evt) => {
-    evt.target.dataset.index === FAT_CAT_INDEX
-      ? rangeBtn.classList.add('range__button--after')
-      : rangeBtn.classList.remove('range__button--after');
+  var newSlideFadeOut = function (slide) {
+    var opacity = 0;
+    var timeout = setTimeout(function tick () {
+      if (opacity < 11) {
+        slide.style.opacity = opacity / 10;
+        opacity++;
+        timeout = setTimeout(tick, 50);
+      }
+    }, 50)
   };
 
-  const makeMobileImageActive = (evt) => {
-    const activeElement = slider.querySelector('.slider__item--active');
-
-    if (evt.target.classList.contains('slider__button')) {
-      activeElement.classList.remove('slider__item--active');
-      sliderImages[evt.target.dataset.index].classList.add('slider__item--active');
-      toggleRangeBtn(evt);
-    }
-
+  var activeSlideFadeIn = function (slide) {
+    var opacity = 1;
+    var timeout = setTimeout(function tick () {
+      if (opacity < 11) {
+        slide.style.opacity = 1 - opacity / 10;
+        opacity++;
+        timeout = setTimeout(tick, 50);
+      }
+    }, 50);
   };
 
-  const makeTabletImageActive = (evt) => {
-    if (evt.target.classList.contains('slider__button')) {
-      sliderImages[evt.target.dataset.index].classList.add('slider__item--fullwidth');
-    }
-  }
+  var changeSlideOpacity = function (activeSlide, newSlide) {
+    newSlideFadeOut(newSlide);
+    activeSlideFadeIn(activeSlide);
+  };
 
-  const changeHandler = () => {
-    if (window.matchMedia(MOBILE_MAX_WIDTH).matches) {
-      slider.addEventListener('click', makeMobileImageActive);
-      slider.removeEventListener('click', makeTabletImageActive);
-      console.log('mobile');
-    };
-
-    if (window.matchMedia(TABLET_MAX_WIDTH).matches && window.matchMedia(TABLET_MIN_WIDTH).matches) {
-      slider.removeEventListener('click', makeMobileImageActive);
-      slider.addEventListener('click', makeTabletImageActive);
-      console.log('tablet');
+  var changeRangeButtonPosition = function (activeSlide) {
+    switch (activeSlide) {
+      case '1':
+        rangeButton.classList.remove('range__button--left');
+        rangeButton.classList.add('range__button--right');
+        break;
+      default:
+        rangeButton.classList.remove('range__button--right');
+        rangeButton.classList.add('range__button--left');
     }
   };
 
-  changeHandler();
+  var changeSlide = function (evt) {
+    var currentSlide = sliderList.querySelector('.slider__item--active')
 
-  window.addEventListener('resize', window.debounce(changeHandler));
+    if (evt.target.classList.contains('button')) {
+      var newSlideIndex = evt.target.dataset.index;
+      currentSlide.classList.toggle('slider__item--active');
+      sliderItems[newSlideIndex].classList.toggle('slider__item--active');
+      changeRangeButtonPosition(newSlideIndex);
+      changeSlideOpacity(currentSlide, sliderItems[newSlideIndex]);
+    }
+  };
 
+  controlsContainer.addEventListener('click', changeSlide);
 })();

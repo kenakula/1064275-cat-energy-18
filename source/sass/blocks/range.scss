@@ -1,24 +1,28 @@
 .range__button {
   position: absolute;
   top: 3px;
+  left: 5px;
   width: 35px;
   height: 7px;
   border: none;
   border-radius: 7px;
   background: $green;
   cursor: pointer;
-  transition: all 0.3s ease-out;
+  transition: all 0.5s ease-out;
 
-  &--after {
-    transform: translate(38px);
+  &--left {
+    left: 5px;
+  }
+
+  &--right {
+    left: 43px;
   }
 }
 
 @media (min-width: $tablet) {
   .range__button {
-    left: 50%;
     top: -13px;
-    margin-left: -17px;
+    left: -5px;
     width: 34px;
     height: 34px;
     border: 1px solid #d0d0d0;
@@ -39,6 +43,14 @@
 
     &:active {
       border: 1px solid $green;
+    }
+
+    &--left {
+      left: -5px;
+    }
+
+    &--right {
+      left: 393px;
     }
   }
 }
