@@ -1,4 +1,4 @@
-# Личный проект «Кэт энерджи» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
+# Личный проект «Кэт энерджи»
 
 * Автор: [Кенан Агаев](https://up.htmlacademy.ru/adaptive/18/user/1064275).
 
