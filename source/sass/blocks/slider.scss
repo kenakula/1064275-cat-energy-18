@@ -9,14 +9,18 @@
 
 .slider__item {
   position: absolute;
-  display: flex;
+  display: none;
   justify-content: center;
   width: 100%;
-  opacity: 0;
 
   &--active {
-    opacity: 1;
+    display: flex;
   }
+}
+
+.slider__image-wrap {
+  display: flex;
+  justify-content: center;
 }
 
 .slider__controls {

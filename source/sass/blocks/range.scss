@@ -10,10 +10,6 @@
   cursor: pointer;
   transition: all 0.5s ease-out;
 
-  &--left {
-    left: 5px;
-  }
-
   &--right {
     left: 43px;
   }
@@ -43,10 +39,6 @@
 
     &:active {
       border: 1px solid $green;
-    }
-
-    &--left {
-      left: -5px;
     }
 
     &--right {
