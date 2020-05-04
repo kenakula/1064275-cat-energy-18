@@ -9,12 +9,14 @@
 
 .slider__item {
   position: absolute;
-  display: none;
+  display: flex;
   justify-content: center;
   width: 100%;
+  opacity: 0;
+  transition: all 0.2s ease-in;
 
   &--active {
-    display: flex;
+    opacity: 1;
   }
 }
 

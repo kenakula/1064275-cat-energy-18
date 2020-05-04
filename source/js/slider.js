@@ -1,25 +1,28 @@
-$(document).ready(function () {
+'use strict';
 
-  const slimColor = "#eaeaea";
+{
+  const slider = document.querySelector('.slider');
+  const sliderItems = slider.querySelectorAll('.slider__item');
+  const sliderControls = slider.querySelector('.slider__controls');
+  const rangeButton = sliderControls.querySelector('.range__button');
 
-  const showSlimSlide = function () {
-    $(".slider__item").eq(0).fadeOut();
-    $(".slider__item").eq(1).fadeIn();
-    $(".range__button").addClass("range__button--right");
+  const showSlide = function () {
+    sliderItems.forEach(function (it) {
+      it.classList.toggle('slider__item--active');
+    })
+  }
 
-    if ($(window).width() >= "1300") {
-      $(".example").css("background-color", slimColor);
+  const onSliderButtonSlideToggle = function (evt) {
+
+    if (evt.target.classList.contains('slider__button--after')) {
+      showSlide();
+      rangeButton.classList.toggle('range__button--right');
+    } else if (evt.target.classList.contains('slider__button--before')) {
+      showSlide();
+      rangeButton.classList.toggle('range__button--right');
     }
-  };
+  }
 
-  const showFatSlide = function () {
-    $(".slider__item").eq(0).fadeIn();
-    $(".slider__item").eq(1).fadeOut();
-    $(".example").css("background-color", "");
-    $(".range__button").removeClass("range__button--right");
-  };
+  sliderControls.addEventListener('click', onSliderButtonSlideToggle);
 
-  $(".slider__button--after").click(showSlimSlide);
-  $(".slider__button--before").click(showFatSlide);
-
-});
+}
