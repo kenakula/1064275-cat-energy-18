@@ -56,10 +56,12 @@ $(document).ready(function () {
     if (index === 0) {
       $('.slider__item--fat').css('opacity', 1);
       $('.slider__item--slim').css('opacity', 0);
+      $('.range__button').removeAttr('style');
       $('.range__button').removeClass('range__button--right');
     } else {
       $('.slider__item--slim').css('opacity', 1);
       $('.slider__item--fat').css('opacity', 0);
+      $('.range__button').removeAttr('style');
       $('.range__button').addClass('range__button--right');
     }
   });
