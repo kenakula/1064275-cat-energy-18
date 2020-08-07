@@ -78,14 +78,6 @@
   .slider__item {
     justify-content: center;
     height: 100%;
-
-    &--fat {
-      background-color: $bg-grey;
-    }
-
-    &--slim {
-      background-color: #eaeaea;
-    }
   }
 
   .slider__image-wrap {
@@ -113,6 +105,7 @@
   }
 
   .slider__range {
+    padding: 0;
     width: 425px;
     height: 7px;
     background-color: $border-color-alt;

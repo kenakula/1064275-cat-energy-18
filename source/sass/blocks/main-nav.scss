@@ -9,7 +9,7 @@
 }
 
 .main-nav__list {
-  display: flex;
+  display: none;
   flex-direction: column;
   flex-wrap: wrap;
 
@@ -17,7 +17,7 @@
 }
 
 .main-nav__toggle {
-  display: none;
+  display: block;
   position: absolute;
   top: -40px;
   right: calc(50vw - 160px + 20px);
@@ -25,11 +25,7 @@
   height: 19px;
   border: none;
   background: none;
-
-  &--open,
-  &--close {
-    display: block;
-  }
+  cursor: pointer;
 
   &--open::before {
     content: "";
@@ -67,10 +63,12 @@
   }
 }
 
-.main-nav__toggle--open + .main-nav__list {
+.no-js .main-nav__toggle {
   display: none;
-  // скрывает меню при появлении бургера
-  // выполнено с целью адаптации к ширине окна, используя CSS
+}
+
+.no-js .main-nav__list {
+  display: flex;
 }
 
 .main-nav__item {

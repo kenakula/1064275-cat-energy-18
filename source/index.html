@@ -7,14 +7,12 @@
   <meta name="description" content="Интернет-магазин функционального питания для котов">
   <meta name="keywords" content="интернет-магазин, питание для котов, похудение, корм для кошек">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <script src="js/picturefill.min.js"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <link rel="stylesheet" href="css/style.min.css">
   <link rel="preload" href="fonts/oswaldmedium.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="fonts/oswaldregular.woff2" as="font" type="font/woff2" crossorigin>
 </head>
 
-<body>
+<body class="no-js">
   <div style="display: none">
     <include src="build/img/sprite.svg"></include>
   </div>
@@ -28,7 +26,8 @@
         </picture>
       </a>
       <nav class="main-nav">
-        <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+        <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть
+            меню</span></button>
         <ul class="main-nav__list">
           <li class="main-nav__item">
             <a class="main-nav__link main-nav__link--active main-nav__link--index-page">Главная</a>
@@ -162,7 +161,7 @@
             <button class="slider__button slider__button--before button" type="button" data-index="0">Было</button>
 
             <div class="slider__range range">
-              <button class="range__button" draggable="true" type="button"></button>
+              <span class="range__button" id="drag"></span>
             </div>
 
             <button class="slider__button slider__button--after button" type="button" data-index="1">Стало</button>
@@ -251,12 +250,8 @@
       </div>
     </div>
   </footer>
-  <!-- <script src="js/touch-support.min.js" type="module"></script> -->
-  <script src="js/debounce.min.js"></script>
-  <script src="js/menu.min.js"></script>
-  <script src="js/map-fallback.min.js"></script>
-  <script src="js/slider.min.js"></script>
-  <script src="js/slider-drag.min.js"></script>
+  <script src="js/vendor.min.js"></script>
+  <script src="js/index.min.js"></script>
 </body>
 
 </html>

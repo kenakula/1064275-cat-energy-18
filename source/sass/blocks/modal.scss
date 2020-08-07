@@ -1,21 +1,18 @@
 .modal {
+  position: absolute;
+  top: 0;
+  left: 0;
   display: none;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  height: 100%;
   width: 100vw;
-  margin-left: calc(-100vw / 2);
-
-
-  &--show {
-    position: absolute;
-    left: 50vw;
-    display: flex;
-    animation: bounce-top 0.6s;
-  }
+  background: rgba($color: $white, $alpha: 0.6);
+  z-index: 100;
+  backdrop-filter: blur(3px);
+  overflow: auto;
 }
 
 .modal__inner {
+  position: fixed;
   padding: 40px 20px 25px;
   background-color: #ffffff;
   width: 320px;

@@ -94,6 +94,7 @@
 .form__input {
   margin: 0;
   padding: 0;
+  cursor: pointer;
 
   &--data,
   &--contacts {
@@ -325,10 +326,6 @@
   color: $dark-grey;
 }
 
-.form__icon--error {
-  fill: $invalid;
-}
-
 .form__icon--valid {
   fill: $green;
 }
@@ -343,6 +340,10 @@
 
   &:focus {
     border-color: $invalid;
+  }
+
+  ~ .form__icon {
+    fill: $invalid;
   }
 }
 

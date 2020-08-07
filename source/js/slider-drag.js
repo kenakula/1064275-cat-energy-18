@@ -36,10 +36,6 @@
   const sliderItems = slider.querySelectorAll('.slider__item');
   const rangeButton = slider.querySelector('.range__button');
 
-  // определяет события по дефолту
-  let startEvt = Events.notouch.start;
-  let moveEvt = Events.notouch.move;
-  let endEvt = Events.notouch.end;
 
   // дефолтное значение прозрачности активного слайда
   let opacity = 1;
@@ -83,7 +79,7 @@
   }
 
   // изменяет прозрачность слайдов
-  const changeSlide = function (evt, evtLeft) {
+  const changeSlide = function (evtLeft) {
     let i = setOpacity(evtLeft);
     // TODO сделать универсальнее
     sliderItems[0].style.opacity = 1 - i;
@@ -108,7 +104,7 @@
         // при каждом движении курсора (пальца) изменяет положение ползунка
         let newLeft = moveEvt.changedTouches[0].clientX - shiftX - sliderRange.getBoundingClientRect().left;
         newLeft = rangeButtonRestrict(newLeft);
-        changeSlide(moveEvt, newLeft);
+        changeSlide(newLeft);
 
         rangeButton.style.left = newLeft + 'px';
       };
@@ -130,7 +126,7 @@
       let onMouseMove = function (moveEvt) {
         let newLeft = moveEvt.clientX - shiftX - sliderRange.getBoundingClientRect().left;
         newLeft = rangeButtonRestrict(newLeft);
-        changeSlide(moveEvt, newLeft);
+        changeSlide(newLeft);
 
         rangeButton.style.left = newLeft + 'px';
       };
