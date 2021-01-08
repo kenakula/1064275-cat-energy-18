@@ -107,6 +107,7 @@
     width: 171px;
     height: 45px;
     border: 1px solid rgba($color: $input-border, $alpha: 0.5);
+    transition: border-color 0.3s ease;
 
     &::-webkit-input-placeholder {
       font-family: $font-regular;
@@ -156,6 +157,7 @@
     border: 1px solid rgba($color: $input-border, $alpha: 0.5);
     resize: none;
     text-transform: uppercase;
+    transition: border-color 0.3s ease;
 
     &:hover {
       border-color: $input-border;
@@ -209,6 +211,7 @@
       height: 30px;
       border: 1px solid $input-border;
       border-radius: 50%;
+      transition: border-color 0.3s ease;
     }
 
     &::after {
