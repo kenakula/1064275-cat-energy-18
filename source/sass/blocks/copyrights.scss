@@ -12,6 +12,7 @@
   line-height: 16px;
   font-family: $font-alt;
   text-decoration: none;
+  transition: color 0.3s ease;
 
   &:hover,
   &:focus {
@@ -31,6 +32,7 @@
 
   &:hover .copyrights__image,
   &:focus .copyrights__image {
+    transition: fill 0.3s ease;
     fill: $green;
   }
 
