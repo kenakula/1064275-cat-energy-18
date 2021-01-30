@@ -2,6 +2,30 @@
   position: relative;
   padding-bottom: 42px;
   padding-top: 140px;
+
+  &:hover {
+    svg {
+      animation: animateIcon 0.3s ease-out;
+    }
+  }
+}
+
+@keyframes animateIcon {
+  0% {
+    transform: translateX(-15%);
+  }
+
+  25% {
+    transform: translateX(0);
+  }
+
+  50% {
+    transform: translateX(15%);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
 }
 
 .buy-all_icon-wrapper {
