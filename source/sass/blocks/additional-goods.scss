@@ -99,6 +99,12 @@
   background-position: center center;
   background-size: cover;
   text-decoration: none;
+  transform: translateZ(0);
+  transition: box-shadow 0.3s ease;
+
+  &:hover {
+    box-shadow: 0 5px 15px rgba($color: #000000, $alpha: 0.4);
+  }
 
   @media (min-resolution: $retina) {
     background-image: url("../img/gift-photo-mobile@2x.jpg");
